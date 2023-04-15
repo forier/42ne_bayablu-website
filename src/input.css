@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap");
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("/assets/fonts/recoleta/Recoleta-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("/assets/fonts/recoleta/Recoleta-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: semibold;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("/assets/fonts/recoleta/Recoleta-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("/assets/fonts/recoleta/Recoleta-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: medium;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply py-6;
+  }
+
+  li {
+    @apply cursor-pointer;
+  }
+
+  section,
+  header {
+    @apply w-full max-w-7xl mx-auto px-[3%];
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply text-4xl font-medium font-[recoleta];
+  }
+
+  .paragraph {
+    @apply text-lg text-[#5F5F5F];
+  }
+
+  .nav-item:not(.active) {
+    @apply text-base font-medium relative after:content-[''] after:w-full after:h-[2px] after:block after:bg-[#FCE914] after:mt-1 after:absolute after:scale-x-0 hover:after:scale-x-100 after:transition after:duration-300 after:origin-left;
+  }
+
+  .nav-item.active {
+    @apply relative after:content-[''] after:w-full after:h-[2px] after:block after:bg-[#FCE914] after:mt-1 after:absolute;
+  }
+}
