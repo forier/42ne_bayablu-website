@@ -595,7 +595,6 @@ section,
   position: relative;
   font-size: 1rem;
   line-height: 1.5rem;
-  font-weight: 500;
 }
 
 .nav-item:not(.active)::after{
@@ -652,8 +651,8 @@ section,
   position: relative;
 }
 
-.left-11{
-  left: 2.75rem;
+.left-0{
+  left: 0px;
 }
 
 .left-4{
@@ -664,16 +663,12 @@ section,
   right: 0.75rem;
 }
 
-.top-\[65\%\]{
-  top: 65%;
-}
-
-.left-0{
-  left: 0px;
-}
-
 .top-0{
   top: 0px;
+}
+
+.top-\[65\%\]{
+  top: 65%;
 }
 
 .z-\[-1\]{
@@ -710,8 +705,8 @@ section,
   margin-left: auto;
 }
 
-.mr-10{
-  margin-right: 2.5rem;
+.mr-8{
+  margin-right: 2rem;
 }
 
 .mt-10{
@@ -724,14 +719,6 @@ section,
 
 .mt-6{
   margin-top: 1.5rem;
-}
-
-.mr-8{
-  margin-right: 2rem;
-}
-
-.mt-20{
-  margin-top: 5rem;
 }
 
 .block{
@@ -750,6 +737,10 @@ section,
   display: none;
 }
 
+.h-10{
+  height: 2.5rem;
+}
+
 .h-\[55px\]{
   height: 55px;
 }
@@ -758,24 +749,20 @@ section,
   height: 56px;
 }
 
-.h-full{
-  height: 100%;
-}
-
-.h-\[50px\]{
-  height: 50px;
-}
-
 .h-\[73px\]{
   height: 73px;
 }
 
-.h-10{
-  height: 2.5rem;
+.h-full{
+  height: 100%;
 }
 
 .min-h-screen{
   min-height: 100vh;
+}
+
+.w-10{
+  width: 2.5rem;
 }
 
 .w-\[100px\]{
@@ -786,24 +773,16 @@ section,
   width: 147px;
 }
 
-.w-\[55px\]{
-  width: 55px;
-}
-
-.w-full{
-  width: 100%;
-}
-
-.w-\[167px\]{
-  width: 167px;
-}
-
 .w-\[53px\]{
   width: 53px;
 }
 
-.w-10{
-  width: 2.5rem;
+.w-\[55px\]{
+  width: 55px;
+}
+
+.w-\[70px\]{
+  width: 70px;
 }
 
 .w-fit{
@@ -811,12 +790,12 @@ section,
   width: fit-content;
 }
 
-.w-\[50px\]{
-  width: 50px;
+.w-full{
+  width: 100%;
 }
 
-.w-\[70px\]{
-  width: 70px;
+.w-\[247px\]{
+  width: 247px;
 }
 
 .max-w-7xl{
@@ -841,10 +820,6 @@ section,
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-cols-4{
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -853,16 +828,8 @@ section,
   flex-direction: column;
 }
 
-.place-items-end{
-  place-items: end;
-}
-
 .place-items-center{
   place-items: center;
-}
-
-.items-end{
-  align-items: flex-end;
 }
 
 .items-center{
@@ -875,6 +842,10 @@ section,
 
 .justify-between{
   justify-content: space-between;
+}
+
+.gap-10{
+  gap: 2.5rem;
 }
 
 .gap-11{
@@ -893,8 +864,8 @@ section,
   gap: 1.5rem;
 }
 
-.gap-10{
-  gap: 2.5rem;
+.gap-1{
+  gap: 0.25rem;
 }
 
 .divide-y > :not([hidden]) ~ :not([hidden]){
@@ -962,25 +933,8 @@ section,
   --tw-gradient-to-position:  ;
 }
 
-.p-\[3px\]{
-  padding: 3px;
-}
-
-.p-\[2px\]{
-  padding: 2px;
-}
-
-.p-\[2\.5px\]{
-  padding: 2.5px;
-}
-
 .p-\[2\.3px\]{
   padding: 2.3px;
-}
-
-.py-20{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
 }
 
 .px-\[3\%\]{
@@ -988,9 +942,19 @@ section,
   padding-right: 3%;
 }
 
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .pb-10{
@@ -999,10 +963,6 @@ section,
 
 .pl-10{
   padding-left: 2.5rem;
-}
-
-.pr-10{
-  padding-right: 2.5rem;
 }
 
 .pt-14{
@@ -1041,6 +1001,16 @@ section,
   line-height: 1.25rem;
 }
 
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -1071,55 +1041,27 @@ section,
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (min-width: 640px){
-  .sm\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+.text-\[\#F205CB\]\/20{
+  color: rgb(242 5 203 / 0.2);
+}
 
-  .sm\:flex-row{
-    flex-direction: row;
-  }
+.text-red-300{
+  --tw-text-opacity: 1;
+  color: rgb(252 165 165 / var(--tw-text-opacity));
+}
 
-  .sm\:items-end{
-    align-items: flex-end;
-  }
+.text-\[\#F205CB\]{
+  --tw-text-opacity: 1;
+  color: rgb(242 5 203 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px){
-  .md\:order-2{
-    order: 2;
-  }
-
-  .md\:ml-auto{
-    margin-left: auto;
-  }
-
-  .md\:mt-0{
-    margin-top: 0px;
-  }
-
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .md\:flex-row{
-    flex-direction: row;
-  }
-
-  .md\:items-end{
-    align-items: flex-end;
-  }
-
-  .md\:gap-0{
-    gap: 0px;
-  }
-
-  .md\:pr-10{
-    padding-right: 2.5rem;
   }
 }
 

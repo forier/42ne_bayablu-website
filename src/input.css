@@ -57,7 +57,7 @@
   }
 
   .nav-item:not(.active) {
-    @apply text-base font-medium relative after:content-[''] after:w-full after:h-[2px] after:block after:bg-[#FCE914] after:mt-1 after:absolute after:scale-x-0 hover:after:scale-x-100 after:transition after:duration-300 after:origin-left;
+    @apply text-base  relative after:content-[''] after:w-full after:h-[2px] after:block after:bg-[#FCE914] after:mt-1 after:absolute after:scale-x-0 hover:after:scale-x-100 after:transition after:duration-300 after:origin-left;
   }
 
   .nav-item.active {

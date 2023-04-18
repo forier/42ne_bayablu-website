@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body
+    x-data="{
+    openSidebar: false,
+}"
+  >
+    <!-- header -->
+    <header class="select-none">
+      <ul
+        class="hidden lg:flex items-center justify-center gap-11 text-sm font-medium"
+      >
+        <li class="nav-item">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a href="marketing-per-homo-sapies.html">
+            Marketing per Homo sapiens
+          </a>
+        </li>
+        <li class="">
+          <img src="/assets/logo.png" alt="" class="w-[100px]" />
+        </li>
+        <li class="nav-item">Blog</li>
+        <li class="nav-item">Consulenza</li>
+        <li class="nav-item">Contatti</li>
+      </ul>
+      <div class="flex items-center justify-between lg:hidden">
+        <img src="/assets/logo.png" alt="" class="w-[70px]" />
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-10 w-10 cursor-pointer lg:hidden"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+          @click="openSidebar = true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </div>
+    </header>
+
+    <!-- Header Offset -->
+    <div
+      class="bg-white fixed left-0 top-0 z-[100] w-full min-h-screen h-full padding py-6 overflow-auto xl:hidden"
+      x-show="openSidebar === true"
+    >
+      <div class="flex items-center justify-between px-[3%]">
+        <a href="/" class="mr-8 shrink-0">
+          <img src="/assets/logo.png" alt="" class="w-[70px]" />
+        </a>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-10 w-10 text-primary-100 cursor-pointer block"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+          @click="openSidebar = false"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </div>
+
+      <!-- Menu Offeset -->
+
+      <nav class="flex items-center gap-10 flex-col mt-10">
+        <a href="index.html" class="nav-item w-fit">Home</a>
+        <a href="marketing-per-homo-sapies.html" class="nav-item active w-fit"
+          >Marketing per Homo sapiens</a
+        >
+        <a href="" class="nav-item">Blog</a>
+        <a href="" class="nav-item">Consulenza</a>
+        <a href="" class="nav-item">Contatti</a>
+      </nav>
+    </div>
+
+    <section
+      class="grid grid-cols-1 lg:grid-cols-2 place-items-center mb-20 gap-6 lg:gap-0 mt-6 md:lg-0"
+    >
+      <div class="flex flex-col gap-6">
+        <span class="text-6xl font-bold font-[recoleta]"
+          >Marketing <br />
+          Per Homo<br />
+          Sapiens</span
+        >
+        <p class="paragraph">
+          Come avviare un business proffitevole o migliorarne uno gia aperto
+        </p>
+      </div>
+      <img
+        src="/assets/homo-sapiens.PNG"
+        alt=""
+        class="lg:ml-auto lg:pr-10 -order-1 lg:order-2"
+      />
+    </section>
+
+    <section class="mb-20 px-[3%]">
+      <div class="bg-[#F205CB]/20 rounded-lg py-10">
+        <h1 class="section-title text-center">
+          MARKETING PER HOMO SAPIENS <br />
+          come aprire un business <br />
+          in modo profittevole <br />
+          o migliorarne uno già aperto.
+        </h1>
+      </div>
+    </section>
+
+    <section class="mb-20 px-[3%]">
+      <div class="rounded-lg">
+        <p class="paragraph text-center">
+          Con Marketing per Homo Sapiens ti trovi davanti alla piu' grossa
+          rivoluzione dei corsi di Marketing del mercato italiano che sia mai
+          stata fatta!
+        </p>
+      </div>
+    </section>
+
+    <section class="mb-20 px-[3%]">
+      <div class="bg-[#FCE914]/10 rounded-lg py-10">
+        <h1 class="section-title text-center italic">
+          Questo corso è indispensabile se vuoi aprire <br />
+          un business on-line o off-line, <br />
+          oppure se hai gia' un'attivita' <br />
+          e vuoi migliorarla per renderla piu' profittevole, <br />
+          è maggiormente adatto per piccole e medie imprese. <br />
+        </h1>
+      </div>
+    </section>
+
+    <section class="mb-20 px-[3%]">
+      <div class="rounded-lg gap-4 flex flex-col">
+        <p class="paragraph text-center">
+          Se stai cominciando un business o ne hai già uno che non ti sta dando
+          le soddisfazioni che ti aspettavi e per questo sei demotivato o forse
+          stai addirittura pensando di mollare, sono qui per aiutarti!
+        </p>
+
+        <p class="paragraph text-center">
+          Sei stufo di perdere soldi? O di guadagnare e vedere la maggior parte
+          dei tuoi guadagni finire in tasse?
+        </p>
+
+        <p class="paragraph text-center">
+          Vorresti metterti in proprio e non sai come partire?
+        </p>
+
+        <p class="paragraph text-center">
+          Vuoi evitare errori che ti costerebbero la perdita di quasi o tutto il
+          denaro investito nella tua prima attività?
+        </p>
+
+        <p class="paragraph text-center">
+          In questo corso apprenderai cose che anche pochissimi commercialisti
+          possono dirti riguardo scelte finanziarie da fare, su come partire col
+          piede giusto e imparare a guadagnare.
+        </p>
+
+        <p class="paragraph text-center">
+          Tutto questo perché ti metto a disposizione 30 anni di esperienza in
+          campo marketing, delle vendite fatte in Italia e all'estero sia off
+          line che on line e strategie finanziarie fatte che mi sono state utili
+          e che vorrei condividere con te, per farti evitare errori che ho
+          commesso, all'inizio della mia carriera che mi sono costati la perdita
+          di centinaia di migliaiai di euro e strategie che mi hanno fatto
+          riguadagnare altrettanti migliaia di euro.
+        </p>
+
+        <p class="paragraph text-center">
+          Mi rivolgo a te che stai per cominciare un business qualunque esso sia
+          e a te che ne hai uno già aperto ma che malgrado anni d’impegno stai
+          per mollare o non trovi soddisfazioni economiche in quello che fai e
+          per questo sei demotivato.
+        </p>
+
+        <p class="paragraph text-center">
+          Ti garantisco che sono tutte emozioni che provano la maggior parte
+          degli imprenditori e che ho provato anch'io.
+        </p>
+
+        <p class="paragraph text-center">
+          Sicuramente però ci sono cose che qualcuno non ti ha spiegato.
+        </p>
+
+        <p class="paragraph text-center">
+          Se oggi posso vivere seguendo i miei business anche dai Caraibi e da
+          posti esotici la maggior parte dell’anno, (ed è tutto provato, chi mi
+          segue lo sa), e senza fare Trading o attività strane, ma semplicemente
+          continuando i miei business sia fisici che on line, organizzandoli in
+          maniera diversa, non richiedendo la mia costante presenza fisica, è
+          semplicemente perché metto in pratica gli insegnamenti che trovi in
+          questo corso.
+        </p>
+
+        <p class="paragraph text-center">
+          Se ci sono riuscito io partendo tanti anni fa da zero, ti giuro che
+          puoi riuscirci anche tu.
+        </p>
+
+        <p class="paragraph text-center">
+          Charlie Munger, socio di Warren Buffet, sostiene che esiste una
+          formula da seguire per rimanere poveri la formula è la seguente:
+        </p>
+
+        <p class="paragraph text-center">
+          "Impara dai Tuoi Errori invece che Imparare dagli Errori degli Altri…"
+        </p>
+
+        <p class="paragraph text-center">
+          Ti rendi conto quanti soldi puoi risparmiare se invece che sbattere la
+          testa da solo investendo tanti soldi per capire poi la lezione puoi
+          già imparare da chi questi soldi li ha già persi prima di te?
+        </p>
+
+        <p class="paragraph text-center">
+          E' un pò come comprare un'auto nuova da 100.000 euro che dopo tre anni
+          ne vale non più di 50.000 anche se in buone condizioni e con pochi
+          chilometri e invece comprare la stessa identica di soli tre anni di
+          vita e pagarla quindi 50.000 euro in meno, godendosi gli stessi
+          optional e benefici.
+        </p>
+
+        <p class="paragraph text-center">
+          Quando impari delle lezioni da uno che certi errori li ha già commessi
+          e risolti e come se stai risparmiando sulla svalutazione della sua
+          auto perchè tu puoi avere la sua auto pagandola 50.000 euro in meno
+          perchè i 50.000 euro di svalutazione li ha già pagati lui comprandola
+          nuova.
+        </p>
+
+        <p class="paragraph text-center">
+          Ignorare le lezioni di persone che certe cose le hanno già imparate
+          secondo una delle persone più ricche del mondo è la ricetta per
+          rimanere poveri.
+        </p>
+
+        <p class="paragraph text-center">
+          Se stai cominciando un business o ne hai già uno che non sta andando
+          come dovrebbe non puoi ignorare questo corso!
+        </p>
+
+        <p class="paragraph text-center">
+          Lavorare duramente per qualcosa che non ti da soddisfazioni e la
+          definizione di stress.
+        </p>
+
+        <p class="paragraph text-center">
+          Lo stress provoca molti disturbi come la cattiva digestione, il
+          gonfiore addominale e purtroppo ormai è risaputo è causa anche di
+          tumori. Ci avevi mai pensato quindi che si può rischiare di morire per
+          lo stress causato dalla perdita di molti soldi e dall'insoddisfazione
+          lavorativa? Forse non ci avevi mai pensato.
+        </p>
+
+        <p class="paragraph text-center">
+          Lavorare facendo qualcosa che ti appaga non può essere considerato più
+          lavoro si può chiamare passione.
+        </p>
+
+        <p class="paragraph text-center">
+          Quando i risultati non arrivano nella vita spesso tendiamo a dare la
+          colpa agli altri compreso tirare in ballo la solita crisi per non
+          ammettere o essere inconsapevoli che il problema di quello che ti sta
+          accadendo puoi essere tu! Bisogna prendersi le proprie responsabilità,
+          puoi essere elogiato per tutte le cose che fai bene solo nel momento
+          in cui accetti di prenderti la responsabilità e la colpa per le cose
+          che fai male.
+        </p>
+
+        <p class="paragraph text-center">
+          Il mondo è troppo pericoloso e complicato per fare tutte le cose da
+          soli, se ti trovi in difficoltà devi trovare una persona a cui
+          chiedere di aiutarti ovviamente sceglila bene, e che prima di te abbia
+          fatto le cose che stai facendo adesso, e devi accettare l'aiuto quando
+          ti viene offerto!
+        </p>
+
+        <p class="paragraph text-center">
+          Quando sarai in grado di accettare l'aiuto quando ti viene offerto e a
+          chiederlo quando sei in difficolta' allora cambierà la tua vita. Forse
+          adesso penserai che non sei tu che mi hai cercato ma che questa
+          pubblicità ti è apparsa per caso, solo che niente accade per caso e se
+          sei arrivato a seguirmi fino a questo punto significa che ero la
+          persona che stavi cercando per aiutarti a risolvere alcuni dei tuoi
+          problemi che stai attraversando nel tuo business. Niente accade per
+          caso ricordatelo! Perchè quando hai bisogno di aiuto se non hai la
+          fortuna d'incontrare fisicamente una persona che può aiutarti, puoi
+          ricercarla in un libro o in un corso. Ti ripeto ancora devi accettare
+          l'aiuto quando ti viene offerto, quando sarai in grado di accettare
+          l'aiuto e a chiederlo quando ne hai bisogno allora cambierà la tua
+          vita.
+        </p>
+
+        <p class="paragraph text-center">
+          Se stai iniziando un business o ne hai già uno che non ti sta dando le
+          soddisfazioni che pensi di meritare allora questo corso è per te.
+        </p>
+
+        <button
+          class="h-[56px] w-[247px] bg-gradient-to-r from-[#FCE914] to-[#61B345] p-[2.3px] mx-auto mt-10"
+        >
+          <div
+            class="flex h-full w-full items-center justify-center bg-white relative"
+          >
+            <h1 class="text-sm tracking-wider font-bold text-[#61B345]">
+              Pulsante acquisto
+            </h1>
+            <svg
+              width="17"
+              height="15"
+              viewBox="0 0 17 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="absolute right-3"
+            >
+              <path
+                d="M0 7.72565C0 7.34595 0.282154 7.03216 0.648229 6.98249L0.75 6.97565L15.75 6.97565C16.1642 6.97565 16.5 7.31143 16.5 7.72565C16.5 8.10534 16.2178 8.41914 15.8518 8.4688L15.75 8.47565L0.75 8.47565C0.335786 8.47565 0 8.13986 0 7.72565Z"
+                fill="url(#paint0_linear_14_65)"
+              />
+              <path
+                d="M9.17101 2.23271C8.87749 1.94045 8.87646 1.46558 9.16872 1.17206C9.43442 0.905218 9.85103 0.880116 10.1451 1.09734L10.2294 1.16977L16.2794 7.19377C16.547 7.46026 16.5714 7.87837 16.3524 8.17245L16.2794 8.25667L10.2294 14.2817C9.93593 14.574 9.46105 14.573 9.16877 14.2795C8.90305 14.0127 8.87971 13.5959 9.09817 13.3028L9.17096 13.2188L14.687 7.72494L9.17101 2.23271Z"
+                fill="url(#paint1_linear_14_65)"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_14_65"
+                  x1="-0.499994"
+                  y1="8.47562"
+                  x2="20.4998"
+                  y2="8.47563"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#FCE914" />
+                  <stop offset="0.996402" stop-color="#61B345" />
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear_14_65"
+                  x1="8.72141"
+                  y1="14.5"
+                  x2="18.3304"
+                  y2="14.5"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#FCE914" />
+                  <stop offset="0.996402" stop-color="#61B345" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </button>
+      </div>
+    </section>
+
+    <section class="mb-20 px-[3%]">
+      <div class="rounded-lg gap-4 flex flex-col paragraph text-center">
+        <p class="text-[#F205CB] font-bold">
+          Questi gli argomenti che imparerai in questo video corso
+        </p>
+
+        <ul class="flex flex-col gap-1">
+          <li>- COME OTTENERE UNO STATO MENTALE ORIENTATO AL SUCCESSO</li>
+          <li>- IL FOCUS</li>
+          <li>- LA FORZA DI UNA VISIONE</li>
+        </ul>
+
+        <p class="font-bold">
+          LA FISCALITA': (PERCHE' E' INUTILE GUADAGNARE SE POI SPENDERAI GRAN
+          PARTE IN TASSE)
+        </p>
+
+        <ul class="flex flex-col gap-1">
+          <li>- I 7 VANTAGGI DI UNA SRL RISPETTO AD UNA DITTA INDIVIDUALE</li>
+          <li>- COME POSSO PRELEVARE SOLDI DA UNA SRL</li>
+          <li>
+            - COME PAGARE MENO TASSE IN MANIERA LEGALE USANDO LE ROYALTIES O IL
+            MARCHIO
+          </li>
+          <li>
+            - COME FUNZIONA IL TRUST PER LA TUTELA DEL PATRIMONIO IMMOBILIARE E
+            DEL DENARO
+          </li>
+          <li>- AUTO AZIENDALE: ACQUISTO, NOLEGGIO O LEASING</li>
+          <li>
+            - COME PAGARE SOLO L’1,2% DI TASSE IN ITALIA E TUTELARE IL TUO
+            PATRIMONIO
+          </li>
+          <li>- COSA FARE CON I SOLDI IN CONTANTI</li>
+          <li>- COSA SUCCEDE SE NON PAGO LE RATE A BANCA O FINANZIARIA</li>
+          <li>- COME LIBERARSI DAI DEBITI E FARE UN SALDO E STRALCIO</li>
+          <li>- IL POSIZIONAMENTO (che cos'è)</li>
+          <li>- COME SCRIVERE UNA DECISIONE DI POSIZIONAMENTO</li>
+          <li>- 4 ERRORI DI MARKETING CHE NON DEVI COMMETTERE</li>
+          <li>- LA LEGGE DI PARETO</li>
+          <li>- LA SEGMENTAZIONE DEL MERCATO</li>
+          <li>- FACEBOOK ADS, GOOGLE ADS E LA SEO</li>
+          <li>- COME DEVE FUNZIONARE UN SITO PER GUADAGNARE</li>
+          <li>- COME FUNZIONANO LE AUTOMAZIONI</li>
+          <li>- COME FARE IL MARKETING</li>
+          <li>- LA COMUNICAZIONE</li>
+          <li>- IL PERCORSO DEL BUON PROFESSIONISTA</li>
+          <li>- COS’E’ IL RAPPORT</li>
+          <li>- LA LEGGE DEL CONTRACCAMBIO</li>
+          <li>- L’EFFETTO PIGMALIONE</li>
+          <li>
+            - COME AFFRONTARE : STRESS, ANSIA, CRISI, PERDITA, COLLERA,
+            DEPRESSIONE, DOLORE
+          </li>
+          <li>- COME UTILIZZARE LA CURIOSITÀ COME FONTE DI ENERGIA</li>
+          - QUALCHE CONSIGLIO PER RISPARMIARE UN’ORA AL GIORNO
+          <li>- COME CAPIRE QUANDO SI RENDE DI PIÙ</li>
+          <li>- I 5 ERRORI COMUNI DI CHI SPRECA TEMPO</li>
+          <li>- STABILIRE LE PRIORITA’</li>
+          <li>- 6 REGOLE D’ORO PER SMETTERE DI RIMANDARE A DOMANI</li>
+          <li>- 5 MODI PER RISPONDERE “NO” A UN NUOVO COMPITO</li>
+          <li>- GUADAGNARE TEMPO EVITANDO STRESS</li>
+          <li>- COME UTILIZZARE L’AGENDA</li>
+          <li>- COME SENTIRSI MEGLIO ALLA FINE DI UNA GIORNATA DI LAVORO</li>
+          <li>- CONSIGLI SALVA TEMPO DALLA MATTINA ALLA SERA</li>
+          <li>- I DIECI COMANDAMENTI DELLA GESTIONE DELLA SCRIVANIA</li>
+          <li>- COME DEVE ESSERE ORGANIZZATA LA SCRIVANIA IDEALE</li>
+          <li>- LE 10 STRATEGIE RISOLUTIVE</li>
+          <li>- LE DIECI ABILITÀ CHE TI PORTERANNO AL SUCCESSO</li>
+          <li>- COME AFFRONTARE GLI INEVITABILI “NO”</li>
+          <li>- UN VADEMECUM PER LA VITA</li>
+        </ul>
+        <div class="text-[#F205CB] font-bold">
+          <p>
+            IN UN DETERMINATO LUOGO, NON E' AVERE PIU' DI UN MILIONE IN BANCA
+          </p>
+
+          <p>
+            ...IL SUCCESSO E' IL CONTINUO CONCRETIZZARSI DEL PROGETTO DELLA
+            VOSTRA VITA COME LO VOLEVATE VOI, ECCO COS'E' IL SUCCESSO. IL
+            CONTINUO CONCRETIZZARSI DEL PROGETTO DELLA VOSTRA VITA COME LO
+            VOLEVATE VOI, QUESTO E' IL SUCCESSO.
+          </p>
+
+          <p>
+            E' FARE CIO' CHE HA SENSO PER VOI, PER LA VOSTRA FAMIGLIA, PER LE
+            VOSTRE RESPONSABILITA'!
+          </p>
+
+          <p>
+            RICORDATI CHE NON DEVI DIVENTARE RICCO PERCHE' QUALCUNO TI HA DETTO
+            CHE QUELLO E' L'EMBLEMA DEL SUCCESSO, E' UNA SCELTA PERSONALE SE
+            AVERE QUEL TIPO DI SUCCESSO, AVERE UN PROGETTO DELLA PROPRIA VITA E
+            CONCRETIZZARLO SIGNIFICA AVERE SUCCESSO INDIPENDENTEMENTE DAI SOLDI
+            CHE SI HANNO IN BANCA.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="grid grid-cols-1 md:grid-cols-2 mb-20 gap-6 place-items-center"
+    >
+      <img src="/assets/section-3.png" alt="" />
+      <div class="flex flex-col gap-4 paragraph italic text-center text-2xl">
+        <p>C'è una regola che vale per l'apprendimento di ogni competenza:</p>
+        <p>
+          la regola delle 10.000 ore. Se hai fatto almeno 10.000 ore di pratica
+          corretta in una cosa, poi la sai fare. Significa almeno tre anni di
+          pratica corretta ed ininterrotta.
+        </p>
+        <p class="font-bold">
+          ...sono 30 anni che mi occupo di vendita e marketing, di persona ma
+          anche on-line, vendita telefonica, business Amazon, e creazione di
+          marchi sia in Italia che all'estero. Se ci sono riuscito io puoi
+          riuscirci anche tu!
+        </p>
+        <p class="text-[#F205CB]">Per questo puoi fidarti!</p>
+      </div>
+    </section>
+
+    <section class="mb-20 px-[3%] flex flex-col">
+      <div class="bg-[#FCE914]/10 rounded-lg py-10">
+        <h1 class="section-title text-center italic text-[#F205CB]">
+          TI POSSO GARANTIRE CHE SE APPLICHERAI ALLA LETTERA <br />
+          QUESTO CORSO E LO RIPETERAI PER ALMENO 10 VOLTE ALLORA <br />
+          LA TUA VITA LAVORATIVA E DI CONSEGUENZA ANCHE <br />
+          QUELLA PRIVATA CAMBIERA' PER IL MEGLIO!
+        </h1>
+      </div>
+
+      <button
+        class="h-[56px] w-[247px] bg-gradient-to-r from-[#FCE914] to-[#61B345] p-[2.3px] mx-auto mt-10"
+      >
+        <div
+          class="flex h-full w-full items-center justify-center bg-white relative"
+        >
+          <h1 class="text-sm tracking-wider font-bold text-[#61B345]">
+            Pulsante acquisto
+          </h1>
+          <svg
+            width="17"
+            height="15"
+            viewBox="0 0 17 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="absolute right-3"
+          >
+            <path
+              d="M0 7.72565C0 7.34595 0.282154 7.03216 0.648229 6.98249L0.75 6.97565L15.75 6.97565C16.1642 6.97565 16.5 7.31143 16.5 7.72565C16.5 8.10534 16.2178 8.41914 15.8518 8.4688L15.75 8.47565L0.75 8.47565C0.335786 8.47565 0 8.13986 0 7.72565Z"
+              fill="url(#paint0_linear_14_65)"
+            />
+            <path
+              d="M9.17101 2.23271C8.87749 1.94045 8.87646 1.46558 9.16872 1.17206C9.43442 0.905218 9.85103 0.880116 10.1451 1.09734L10.2294 1.16977L16.2794 7.19377C16.547 7.46026 16.5714 7.87837 16.3524 8.17245L16.2794 8.25667L10.2294 14.2817C9.93593 14.574 9.46105 14.573 9.16877 14.2795C8.90305 14.0127 8.87971 13.5959 9.09817 13.3028L9.17096 13.2188L14.687 7.72494L9.17101 2.23271Z"
+              fill="url(#paint1_linear_14_65)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_14_65"
+                x1="-0.499994"
+                y1="8.47562"
+                x2="20.4998"
+                y2="8.47563"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#FCE914" />
+                <stop offset="0.996402" stop-color="#61B345" />
+              </linearGradient>
+              <linearGradient
+                id="paint1_linear_14_65"
+                x1="8.72141"
+                y1="14.5"
+                x2="18.3304"
+                y2="14.5"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#FCE914" />
+                <stop offset="0.996402" stop-color="#61B345" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </button>
+    </section>
+
+    <section class="mb-20 px-[3%]">
+      <div
+        class="rounded-lg gap-4 flex flex-col font-medium text-center text-xl"
+      >
+        Non mi ritengo un guru perchè sono in continua evoluzione e ho ancora da
+        imparare, oggi purtroppo a causa di finti guru è stata svalutata questa
+        parola, essere un guru significa essere un super esperto di una certa
+        materia, conoscerla a mena dito, perchè la si è studiata e sperimentata
+        per svariati anni. Oggi ci sono persone che anche non definendosi guru,
+        fanno credere di esserlo solo perchè hanno studiato qualche corso e per
+        uno o due anni sono riusciti a guadagnare bene ma gli manca tutta quella
+        esperienza fatta anche di alti e bassi di cui è caratterizzata la vita.
+        Credere a certi guru della vendita che dicono d’insegnare tecniche di
+        vendita che ti permetteranno di poter vendere a chiunque è sbagliato
+        perché ogni prodotto/servizio ha un suo target e se vendi a persone
+        fuori dal target, per vendere sarai costretto a fare una vendita
+        “truffaldina” inventandoti cose che il tuo prodotto o servizio non ha.
+        La prima cosa da fare è individuare persone in target al tuo prodotto o
+        servizio, dopo averlo fatto, con loro puoi usare tutta la tua bravura di
+        venditore per conquistarlo perchè essendo un cliente in target non sarà
+        mai una vendita “truffaldina”. Se non parti dall’individuazione del
+        cliente in target con il tuo prodotto significa pensare di poter vendere
+        a tutti ma poche cose possono avere un target generico. Se forzi la
+        vendita con persone non in target al tuo prodotto puoi anche riuscire a
+        vendere ma a clienti che poi malediranno il fatto di aver comprato da te
+        poco dopo aver acquistato. Io t'insegnerò a trovare e a vendere a
+        clienti in target in qualsiasi tipo di mercato ti trovi.
+      </div>
+    </section>
+
+    <section class="mb-20 px-[3%] flex flex-col">
+      <div class="bg-[#FCE914]/10 rounded-lg py-10">
+        <h1 class="section-title text-center italic text-sm">
+          Con questo corso t'insegno tutto quello che devi sapere per lavorare,
+          a partire dallo: <br />
+
+          - stato mentale da tenere per ottenere la giusta motivazione, - la
+          fiscalità: come risparmiare legalmente sulle tasse, come difenderti da
+          pignoramenti, fare un saldo e stralcio, etc... - come creare un brand
+          positioning, - come fare marketing off line e on-line, - tecniche di
+          vendita avanzate - come fare marketing automation, - come far fruttare
+          il tuo sito internet e automatizzarlo, - come crearti una tua lista
+          clienti e non pagare la pubblicità, - come creare una landing page, in
+          maniera facile - come pubblicizzarti e attirare i clienti su Facebook,
+          Instagram e Google, - come creare un sistema di funnel marketing ...e
+          tanto altro.
+
+          <br />
+          <p class="text-[#F205CB]">
+            DIFFICILMENTE TROVERAI UN CORSO COSI' COMPLETO NEL MERCATO!
+          </p>
+        </h1>
+      </div>
+    </section>
+
+    <section class="mb-20 px-[3%] flex flex-col">
+      <div class="bg-[#F205CB]/20 rounded-lg py-10">
+        <h1 class="section-title text-center">
+          PASSA ALL'AZIONE SE VUOI <br />
+          VERAMENTE CAMBIARE <br />
+          IL TUO PRESENTE E IL TUO FUTURO!
+        </h1>
+      </div>
+
+      <button
+        class="h-[56px] w-[247px] bg-gradient-to-r from-[#FCE914] to-[#61B345] p-[2.3px] mx-auto mt-10"
+      >
+        <div
+          class="flex h-full w-full items-center justify-center bg-white relative"
+        >
+          <h1 class="text-sm tracking-wider font-bold text-[#61B345]">
+            Pulsante acquisto
+          </h1>
+          <svg
+            width="17"
+            height="15"
+            viewBox="0 0 17 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="absolute right-3"
+          >
+            <path
+              d="M0 7.72565C0 7.34595 0.282154 7.03216 0.648229 6.98249L0.75 6.97565L15.75 6.97565C16.1642 6.97565 16.5 7.31143 16.5 7.72565C16.5 8.10534 16.2178 8.41914 15.8518 8.4688L15.75 8.47565L0.75 8.47565C0.335786 8.47565 0 8.13986 0 7.72565Z"
+              fill="url(#paint0_linear_14_65)"
+            />
+            <path
+              d="M9.17101 2.23271C8.87749 1.94045 8.87646 1.46558 9.16872 1.17206C9.43442 0.905218 9.85103 0.880116 10.1451 1.09734L10.2294 1.16977L16.2794 7.19377C16.547 7.46026 16.5714 7.87837 16.3524 8.17245L16.2794 8.25667L10.2294 14.2817C9.93593 14.574 9.46105 14.573 9.16877 14.2795C8.90305 14.0127 8.87971 13.5959 9.09817 13.3028L9.17096 13.2188L14.687 7.72494L9.17101 2.23271Z"
+              fill="url(#paint1_linear_14_65)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_14_65"
+                x1="-0.499994"
+                y1="8.47562"
+                x2="20.4998"
+                y2="8.47563"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#FCE914" />
+                <stop offset="0.996402" stop-color="#61B345" />
+              </linearGradient>
+              <linearGradient
+                id="paint1_linear_14_65"
+                x1="8.72141"
+                y1="14.5"
+                x2="18.3304"
+                y2="14.5"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#FCE914" />
+                <stop offset="0.996402" stop-color="#61B345" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </button>
+
+      <p class="text-center mt-10 italic font-medium text-[#F205CB]">
+        ...non restare Homo Sapiens! Questo corso è per chi vuole evolversi!
+      </p>
+    </section>
+
+    <footer class="bg-black text-white -mb-6 w-full text-center">
+      <div class="max-w-7xl mx-auto pt-14 pb-10 items-center divide-y">
+        <ul class="flex flex-col items-center font-normal gap-2 pb-10">
+          <p class="font-bold">© 2020 IL POTERE DI FARCELA</p>
+          <p>PIA INTERNATIONA SAGL</p>
+          <p>Via Cantonale 69 6805 Mezzovico (CH)</p>
+          <p>Partita IVA CHE-321.366.709 IVA</p>
+          <p>
+            Tutti i Diritti sono riservati. E' vietata qualsiasi riproduzione,
+            anche parziale
+          </p>
+
+          <hr class="text-white bg-white" />
+        </ul>
+
+        <div class="pt-6 text-center">
+          <p>
+            *This Website is non a part of Facebook or Facebook Inc.
+            Additionally, this site is NOT endorsed by Facebook in any way.
+          </p>
+          <p>FACEBOOK is a trademark of FACEBOOK Inc.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+  </body>
+</html>
