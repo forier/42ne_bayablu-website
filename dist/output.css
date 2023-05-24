@@ -798,6 +798,14 @@ section,
   margin-top: 3rem;
 }
 
+.mt-2{
+  margin-top: 0.5rem;
+}
+
+.mt-8{
+  margin-top: 2rem;
+}
+
 .block{
   display: block;
 }
@@ -1131,6 +1139,11 @@ section,
   background-color: rgb(252 233 20 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#F9F9F9\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 249 249 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-r{
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -1196,6 +1209,16 @@ section,
 .to-\[\#65B445\]\/10{
   --tw-gradient-to: rgb(101 180 69 / 0.1) var(--tw-gradient-to-position);
   --tw-gradient-to-position:  ;
+}
+
+.object-contain{
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-\[2\.3px\]{
