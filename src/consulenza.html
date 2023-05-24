@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body
+    x-data="{
+    openSidebar: false,
+}"
+  >
+    <!-- header -->
+    <header class="select-none">
+      <ul
+        class="hidden lg:flex items-center justify-center gap-11 text-sm font-medium"
+      >
+        <li class="nav-item">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="marketing-per-homo-sapies.html">
+            Marketing per Homo sapiens
+          </a>
+        </li>
+        <li class="">
+          <img src="/assets/logo.png" alt="" class="w-[100px]" />
+        </li>
+        <li class="nav-item">
+          <a href="blog-1.html"> Blog </a>
+        </li>
+        <li class="nav-item active">
+          <a href="consulenza.html"> Consulenza </a>
+        </li>
+        <li class="nav-item">Contatti</li>
+      </ul>
+      <div class="flex items-center justify-between lg:hidden">
+        <img src="/assets/logo.png" alt="" class="w-[70px]" />
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-10 w-10 cursor-pointer lg:hidden"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+          @click="openSidebar = true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </div>
+    </header>
+
+    <!-- Header Offset -->
+    <div
+      class="bg-white fixed left-0 top-0 z-[100] w-full min-h-screen h-full padding py-6 overflow-auto xl:hidden"
+      x-show="openSidebar === true"
+    >
+      <div class="flex items-center justify-between px-[3%]">
+        <a href="/" class="mr-8 shrink-0">
+          <img src="/assets/logo.png" alt="" class="w-[70px]" />
+        </a>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-10 w-10 text-primary-100 cursor-pointer block"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+          @click="openSidebar = false"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </div>
+
+      <!-- Menu Offeset -->
+
+      <nav class="flex items-center gap-10 flex-col mt-10">
+        <a href="index.html" class="nav-item w-fit">Home</a>
+        <a href="marketing-per-homo-sapies.html" class="nav-item w-fit"
+          >Marketing per Homo sapiens</a
+        >
+        <a href="blog-1.html" class="nav-item w-fit">Blog</a>
+        <a href="consulenza.html" class="nav-item active w-fit">Consulenza</a>
+        <a href="#" class="nav-item w-fit">Contatti</a>
+      </nav>
+    </div>
+
+    <section
+      class="grid grid-cols-1 lg:grid-cols-2 place-items-center mb-20 gap-6 lg:gap-0 mt-6 md:lg-0"
+    >
+      <div class="flex flex-col gap-6">
+        <span class="section-title"
+          >Ottieni una consulenza personalizzata per la tua attività</span
+        >
+        <p class="paragraph">
+          If you need personalized advice from me on how to start a business or
+          how to restructure your existing business to make it more profitable,
+          please fill out the form below. If I believe I can help you, you will
+          be contacted. If you don't hear back from me within 72 hours of
+          submitting your request, please accept my sincere wishes from now on.
+        </p>
+      </div>
+      <img
+        src="/assets/consulenza-hero.png"
+        alt=""
+        class="lg:ml-auto lg:pr-10 -order-1 lg:order-2"
+      />
+    </section>
+
+    <div class="bg-[#FCE914]/10">
+      <section class="py-14">
+        <h1 class="section-title text-center">
+          Compila il modulo per mettiti in contatto!
+        </h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+          <div class="w-full">
+            <input
+              class="bg-white appearance-none border-2 border-gray-200 py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:border-[#FCE914] w-full"
+              type="text"
+              placeholder="Name"
+            />
+          </div>
+          <div class="w-full">
+            <input
+              class="bg-white appearance-none border-2 border-gray-200 py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:border-[#FCE914] w-full"
+              type="text"
+              placeholder="Surname"
+            />
+          </div>
+          <div class="w-full">
+            <input
+              class="bg-white appearance-none border-2 border-gray-200 py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:border-[#FCE914] w-full"
+              type="text"
+              placeholder="Company Name"
+            />
+          </div>
+          <div class="w-full">
+            <input
+              class="bg-white appearance-none border-2 border-gray-200 py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:border-[#FCE914] w-full"
+              type="text"
+              placeholder="Company Adress"
+            />
+          </div>
+          <div class="w-full">
+            <input
+              class="bg-white appearance-none border-2 border-gray-200 py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:border-[#FCE914] w-full"
+              type="email"
+              placeholder="Email"
+            />
+          </div>
+          <div class="w-full">
+            <input
+              class="bg-white appearance-none border-2 border-gray-200 py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:border-[#FCE914] w-full"
+              type="text"
+              placeholder="Whatsapp"
+            />
+          </div>
+          <div class="w-full">
+            <input
+              class="bg-white appearance-none border-2 border-gray-200 py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:border-[#FCE914] w-full"
+              type="text"
+              placeholder="Industry Sector"
+            />
+          </div>
+          <div class="w-full">
+            <input
+              class="bg-white appearance-none border-2 border-gray-200 py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:border-[#FCE914] w-full"
+              type="text"
+              placeholder="Annual Company Revenue"
+            />
+          </div>
+          <div class="w-full">
+            <input
+              class="bg-white appearance-none border-2 border-gray-200 py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:border-[#FCE914] w-full"
+              type="text"
+              placeholder="Desired Revenue"
+            />
+          </div>
+          <div class="w-full">
+            <input
+              class="bg-white appearance-none border-2 border-gray-200 py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:border-[#FCE914] w-full"
+              type="text"
+              placeholder="Issue/Problem"
+            />
+          </div>
+
+          <div>
+            <div class="flex items-center">
+              <input
+                checked
+                id="checked-checkbox"
+                type="checkbox"
+                value=""
+                class="w-5 h-5 text-red-300 bg-gray-100 border-gray-300 focus:ring-blue-500"
+              />
+              <label for="checked-checkbox" class="ml-2 text-base font-medium"
+                >Agree to the
+                <span class="text-[#1252D3]">terms and conditions.</span></label
+              >
+            </div>
+            <div
+              class="bg-[#FCE914] hover:bg-opacity-80 py-5 cursor-pointer flex items-center justify-center font-medium relative top-6"
+            >
+              Send Your Request
+
+              <svg
+                width="17"
+                height="15"
+                viewBox="0 0 17 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="absolute right-5"
+              >
+                <path
+                  d="M0 7.72534C0 7.34565 0.282154 7.03185 0.648229 6.98219L0.75 6.97534L15.75 6.97534C16.1642 6.97534 16.5 7.31113 16.5 7.72534C16.5 8.10504 16.2178 8.41883 15.8518 8.4685L15.75 8.47534L0.75 8.47534C0.335786 8.47534 0 8.13956 0 7.72534Z"
+                  fill="black"
+                />
+                <path
+                  d="M9.17101 2.23247C8.87749 1.94021 8.87646 1.46534 9.16872 1.17181C9.43442 0.904974 9.85103 0.879871 10.1451 1.09709L10.2294 1.16953L16.2794 7.19353C16.547 7.46002 16.5714 7.87813 16.3524 8.1722L16.2794 8.25643L10.2294 14.2814C9.93593 14.5737 9.46105 14.5727 9.16877 14.2792C8.90305 14.0124 8.87971 13.5957 9.09817 13.3025L9.17096 13.2186L14.687 7.7247L9.17101 2.23247Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="bg-black text-white -mb-6 w-full text-center">
+      <div class="max-w-7xl mx-auto pt-14 pb-10 items-center divide-y">
+        <ul class="flex flex-col items-center font-normal gap-2 pb-10">
+          <p class="font-bold">© 2020 IL POTERE DI FARCELA</p>
+          <p>PIA INTERNATIONA SAGL</p>
+          <p>Via Cantonale 69 6805 Mezzovico (CH)</p>
+          <p>Partita IVA CHE-321.366.709 IVA</p>
+          <p>
+            Tutti i Diritti sono riservati. E' vietata qualsiasi riproduzione,
+            anche parziale
+          </p>
+
+          <hr class="text-white bg-white" />
+        </ul>
+
+        <div class="pt-6 text-center">
+          <p>
+            *This Website is non a part of Facebook or Facebook Inc.
+            Additionally, this site is NOT endorsed by Facebook in any way.
+          </p>
+          <p>FACEBOOK is a trademark of FACEBOOK Inc.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+  </body>
+</html>

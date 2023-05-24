@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body
+    x-data="{
+    openSidebar: false,
+}"
+  >
+    <!-- header -->
+    <header class="select-none">
+      <ul
+        class="hidden lg:flex items-center justify-center gap-11 text-sm font-medium"
+      >
+        <li class="nav-item">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="marketing-per-homo-sapies.html">
+            Marketing per Homo sapiens
+          </a>
+        </li>
+        <li class="">
+          <img src="/assets/logo.png" alt="" class="w-[100px]" />
+        </li>
+        <li class="nav-item active">
+          <a href="blog-1.html"> Blog </a>
+        </li>
+        <li class="nav-item">
+          <a href="consulenza.html"> Consulenza </a>
+        </li>
+        <li class="nav-item">Contatti</li>
+      </ul>
+      <div class="flex items-center justify-between lg:hidden">
+        <img src="/assets/logo.png" alt="" class="w-[70px]" />
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-10 w-10 cursor-pointer lg:hidden"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+          @click="openSidebar = true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </div>
+    </header>
+
+    <!-- Header Offset -->
+    <div
+      class="bg-white fixed left-0 top-0 z-[100] w-full min-h-screen h-full padding py-6 overflow-auto xl:hidden"
+      x-show="openSidebar === true"
+    >
+      <div class="flex items-center justify-between px-[3%]">
+        <a href="/" class="mr-8 shrink-0">
+          <img src="/assets/logo.png" alt="" class="w-[70px]" />
+        </a>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-10 w-10 text-primary-100 cursor-pointer block"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+          @click="openSidebar = false"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </div>
+
+      <!-- Menu Offeset -->
+
+      <nav class="flex items-center gap-10 flex-col mt-10">
+        <a href="index.html" class="nav-item w-fit">Home</a>
+        <a href="marketing-per-homo-sapies.html" class="nav-item w-fit"
+          >Marketing per Homo sapiens</a
+        >
+        <a href="blog-1.html" class="nav-item active">Blog</a>
+        <a href="consulenza.html" class="nav-item w-fit">Consulenza</a>
+        <a href="" class="nav-item">Contatti</a>
+      </nav>
+    </div>
+
+    <section class="mb-20 px-[3%] mt-12">
+      <div
+        class="bg-gradient-to-b from-[#FCE914]/20 to-[#65B445]/10 pl-10 py-2"
+      >
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 place-items-center md:place-items-end relative"
+        >
+          <div class="order-2">
+            <h1 class="section-title">
+              Fai la guardia alla porta della tua mente.
+            </h1>
+
+            <ul class="paragraph flex flex-col gap-4 my-10">
+              <p class="italic border-l-[5px] border-[#828282] pl-2">
+                Tutto arriva a tempo debito, purché tu abbia la giusta
+                consapevolezza, niente entra nella tua vita fuori dal tempo.
+                Tutto accade proprio quando dovrebbe accadere.
+              </p>
+
+              <p class="italic border-l-[5px] border-[#828282] pl-2">
+                By Arturo Mazzeo on 18-April-2023
+              </p>
+            </ul>
+          </div>
+          <img
+            src="/assets/blog-hero.png"
+            alt=""
+            class="md:mt-auto md:top-7 relative order-1 md:order-3 mb-8 md:mb-0"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-20 px-[3%] mt-10">
+      <div class="grid grid-cols-1 md:grid-cols-[2fr_1fr] mt-10 gap-10">
+        <div class="flex flex-col gap-4 paragraph text-black">
+          <p>
+            <span class="text-[56px]">E</span> cco un atteggiamento dannoso,
+            eccesso di cautela. Alcune persone non avranno mai molto, sono
+            troppo caute. Ora puoi anche essere troppo sconsiderato, ma puoi
+            anche essere troppo cauto. Questo è chiamato approccio timido alla
+            vita. La mia cautela, era sempre verso il rischio, il rischio mi
+            metteva con le spalle al muro, pensavo: e se succedesse questo? Si
+            chiama la lingua dei poveri. E se andasse male? E per di più, se ciò
+            dovesse accadere guarda la situazione in cui mi troverei, meglio che
+            non ci provi, potrei sempre rilassarmi. E la cosa che mi ha cambiato
+            la vita e quando finalmente ho scoperto che è tutto rischioso. Nel
+            momento in cui sei nato è diventato rischioso. Se pensi che provare
+            sia rischioso, aspetta che ti diano il conto per non aver provato.
+            Se pensi che investire sia rischioso, aspetta che ti presentino il
+            conto per non avere investito, vedi è tutto rischioso. Sposarsi lo
+            è, avere figli lo è, entrare in affari lo è, investire i tuoi soldi
+            lo è, è tutto rischioso. Ti dirò quanto è rischiosa la vita e non ne
+            uscirai vivo, quello è rischioso.
+          </p>
+
+          <p>
+            Allora se è così che funziona proviamoci! Esatto, ecco cosa dovresti
+            fare, provarci! Qualcuno dice sì, ma sto cercando sicurezza e
+            tranquillità. Bene… allora rannicchiati in un angolo, ti copriamo
+            con un lenzuolo, ti portiamo tre pasti al giorno, ti proteggeremo,
+            ti nutriremo, ci prenderemo cura di te. Non permetteremo che ti
+            succeda nulla e probabilmente vivrai fino a cento anni. Il ragazzo
+            rispose: sì, vivrei fino a cento anni, ma che vita sarebbe? Giusto
+            che modo di vivere sarebbe sicuro e protetto? Allora non cercare la
+            sicurezza, cerca l'avventura. Meglio vivere trent'anni pieni di
+            avventure che cento anni al sicuro in un angolo. E vedi, non è
+            importante quanto tempo vivi, l'importante è come vivi. Ecco il
+            prossimo atteggiamento negativo: è il pessimismo. Pessimismo, la
+            malattia mortale di guardare sempre il lato negativo, il lato
+            problematico, il lato difficile, cercare tutte le ragioni per cui
+            non si può fare, il povero pessimista conduce una vita brutta. Il
+            pessimista non si concentra su ciò che funziona, si concentra su ciò
+            che non funziona, non cerca la virtù, cerca i difetti e quando li
+            trova è felice… pensa che tristezza.
+          </p>
+
+          <p>
+            Questo è il poveretto che guarda dalla finestra e non vede il
+            tramonto, vede il suo riflesso. Questo è il ragazzo che si precipita
+            e dice ho 5 buoni motivi per cui non funzionerà. E’ così stupido che
+            non sa che ha bisogno solo di un motivo, no… lui ne ha 5. Per il
+            pessimista il bicchiere è sempre mezzo vuoto. Per l'ottimista il
+            bicchiere è mezzo pieno. Perché la stessa misura dovrebbe
+            influenzare le persone in due modi diversi? Tutto dipende da come la
+            si guarda, le nostre vite sono per lo più influenzate dal modo in
+            cui vediamo le cose. Non da come sono realmente, il modo in cui
+            pensiamo che siano ci influenza di più. Le cattive abitudini di
+            pensiero mantengono la maggior parte delle persone povere, non le
+            cattive abitudini lavorative, la maggior parte delle persone lavora
+            molto, ma non pensa molto. La mente è come una fabbrica, una
+            fabbrica mentale e qualsiasi cosa tu pensi ogni giorno sono gli
+            ingredienti della tua fabbrica mentale ed è questo che costruisce il
+            tessuto economico sociale, finanziario della tua vita. Come pensi,
+            così diventi.
+          </p>
+          <p>
+            Io iniziavo la giornata leggendo il giornale, voglio dire, puoi
+            crederci o meno, prendevo una tazza di caffè e leggevo il giornale e
+            leggevo di guerre, rivolte, omicidi, accoltellamenti, rapine, furti
+            e incidenti automobilistici, tragedie. Leggevo anche le ultime
+            pagine, sembrava che mi piacesse quella roba per qualche strano
+            motivo, mi caricavo con tutta quella roba. Poi iniziavo la giornata.
+            Potete immaginare che tipo di giornate avevo? Il ragazzo dice,
+            voglio essere un grande leader, meraviglioso. La prima cosa che
+            facciamo è seguirlo a casa sua. Quando arriviamo, entriamo e
+            controlliamo la sua biblioteca. Qualcuno dice, perché controllare la
+            sua biblioteca? Il motivo è perché tramite la lettura un uomo versa
+            gli ingredienti nella sua fabbrica mentale e il tessuto della sua
+            vita è costruito da quegli ingredienti. Non crederesti a quello che
+            alcune persone hanno da leggere in casa loro. Non ci crederesti. Una
+            delle parole che definisce meglio ciò che leggono è spazzatura.
+            Riesci a immaginare di scaricare ogni giorno una balla di spazzatura
+            in questa fabbrica mentale e di uscirne con una vita ricca, dinamica
+            e positiva? Non si può fare.
+          </p>
+
+          <p>
+            Un ragazzo mi ha chiesto: signor Ron, come costruisce una bella
+            vita? Ho detto, è semplice. Non è facile ma è semplice, ecco come
+            costruisci qualsiasi cosa, scegli gli ingredienti giusti, tieni
+            fuori gli ingredienti sbagliati e si parte con il pensiero. Tutto
+            parte dal pensiero, quindi devi essere saggio e attento a cosa
+            pensi. Perché da lì inizia tutto. Devi essere saggio e attento, ho
+            chiesto ai bambini “cosa accadrebbe se qualcuno lasciasse cadere
+            dello zucchero nel caffè e dissero: Beh… staresti bene. Ho detto: “e
+            se qualcuno mi avesse fatto cadere la stricnina nel caffè?”.
+            Dissero: Beh saresti morto, ho detto corretto. Lezione uno: la vita
+            è sia a zucchero che stricnina, devi stare attento. E se il mio
+            peggior nemico facesse cadere lo zucchero? Hanno risposto: “Beh,
+            staresti bene!”. E se il mio migliore amico, anche per caso versasse
+            la stricnina? Hanno risposto: “Beh, saresti morto!”. Corretto!
+            Lezione due: attento al tuo caffè. Devi stare attento: vedi non
+            importa chi ti consegna le cose brutte, non importa dove prendi le
+            cose brutte, faranno comunque dei danni al tuo conto bancario,
+            ovunque tu le prenda. Quando incontrai il signor Shelf, mi citò una
+            delle frasi che preferisco, mi disse: “Jim ogni giorno alza la
+            guardia alla porta della tua mente. Quanto è importante… fai la
+            guardia alla porta della tua mente. Tu decidi cosa entra nella tua
+            fabbrica mentale, non permettere a nessuno di scaricare tutto ciò
+            che vuole nella tua fabbrica mentale, perché poi devi convivere con
+            i risultati. Ecco l'ultima malattia e abbiamo finito: lamentarsi,
+            piangere, piagnucolare, lagnarsi. Una parola biblica chiamata:
+            mormorio, vedi questo stroncherà il tuo futuro. Passa 5 minuti a
+            lamentarti ed avrai sprecato 5 minuti e potresti avere iniziato
+            quello che è noto come cancro economico delle ossa.
+          </p>
+
+          <p>
+            Sicuramente ti trascineranno presto in un deserto finanziario e ti
+            lasceranno soffocare con la polvere del tuo stesso rimpianto. È una
+            malattia mortale, se non pensi che sia così male, chiedi ai figli di
+            Israele di fama vetero testamentaria tipico di tutti noi. La storia
+            dice: i figli di Israele erano schiavi, Dio compì una serie di
+            miracoli abbaglianti e li fece uscire e ora si stavano dirigendo
+            verso la terra promessa. Tragedia della storia però: non ci sono mai
+            arrivati. Motivo? Dal primo giorno hanno iniziato a lamentarsi. Si
+            lamentavano dell'acqua, si lamentavano del clima, si lamentavano,
+            piangevano e si lamentavano del cibo. Si lamentavano della guida, si
+            lamentavano e piangevano perché era troppo lontano, troppo freddo,
+            troppo caldo, troppo difficile, troppo miserabile. Voglio dire,
+            hanno pianto e si sono lamentati per anni. Alla fine, Dio disse: ho
+            capito, viaggio annullato. O qualcosa di simile. La storia dice che
+            sono morti nel deserto. Senza mai arrivare alla terra promessa, che
+            penso significhi due cose, impegnati nelle lamentele, abbastanza a
+            lungo e distruggerai il tuo futuro e immagino significhi anche che
+            Dio stesso può sopportare fino ad un limite; quindi, stai attento
+            alle cose che possono distruggere tutto il bene che puoi fare.
+          </p>
+        </div>
+        <div>
+          <h1 class="section-title text-xl">Related Posts</h1>
+
+          <a href="blog-1.html">
+            <div class="mt-6 cursor-pointer">
+              <img
+                src="/assets/blog-thumbnail.png"
+                alt=""
+                class="border-b-[6px] border-[#FCE914]/20"
+              />
+              <div class="flex items-center justify-between my-2">
+                <span class="font-bold text-2xl">Le convinzioni</span>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1_326)">
+                    <path
+                      d="M16.0039 9.414L7.39691 18.021L5.98291 16.607L14.5889 8H7.00391V6H18.0039V17H16.0039V9.414Z"
+                      fill="#03053D"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_326">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="paragraph">
+                Tutto arriva a tempo debito, purché tu abbia la giusta
+                consapevolezza, niente entra nella tua vita fuori dal tempo.
+              </div>
+            </div>
+          </a>
+
+          <a href="blog-2.html">
+            <div class="mt-6 cursor-pointer">
+              <img
+                src="/assets/blog-thumbnail.png"
+                alt=""
+                class="border-b-[6px] border-[#FCE914]/20"
+              />
+              <div class="flex items-center justify-between my-2">
+                <span class="font-bold text-2xl">Regole per il successo</span>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1_326)">
+                    <path
+                      d="M16.0039 9.414L7.39691 18.021L5.98291 16.607L14.5889 8H7.00391V6H18.0039V17H16.0039V9.414Z"
+                      fill="#03053D"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_326">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="paragraph">
+                Tutto arriva a tempo debito, purché tu abbia la giusta
+                consapevolezza, niente entra nella tua vita fuori dal tempo.
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-black text-white -mb-6 w-full text-center">
+      <div class="max-w-7xl mx-auto pt-14 pb-10 items-center divide-y">
+        <ul class="flex flex-col items-center font-normal gap-2 pb-10">
+          <p class="font-bold">© 2020 IL POTERE DI FARCELA</p>
+          <p>PIA INTERNATIONA SAGL</p>
+          <p>Via Cantonale 69 6805 Mezzovico (CH)</p>
+          <p>Partita IVA CHE-321.366.709 IVA</p>
+          <p>
+            Tutti i Diritti sono riservati. E' vietata qualsiasi riproduzione,
+            anche parziale
+          </p>
+
+          <hr class="text-white bg-white" />
+        </ul>
+
+        <div class="pt-6 text-center">
+          <p>
+            *This Website is non a part of Facebook or Facebook Inc.
+            Additionally, this site is NOT endorsed by Facebook in any way.
+          </p>
+          <p>FACEBOOK is a trademark of FACEBOOK Inc.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+  </body>
+</html>
