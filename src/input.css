@@ -63,4 +63,25 @@
   .nav-item.active {
     @apply relative after:content-[''] after:w-full after:h-[2px] after:block after:bg-[#FCE914] after:mt-1 after:absolute;
   }
+
 }
+
+.hover-animation {
+  @apply transition-all ease-in-out duration-300;
+}
+
+/* btn  */
+
+.btn_gradient {
+  background: linear-gradient(180deg, #ffc338 0%, #fbe3a2 100%);
+}
+
+.main-btn {
+  @apply md:mt-12 mt-5 btn_gradient hover-animation hover:scale-110 rounded-md inline-flex pl-14 py-4 gap-7 pr-4 items-center;
+}
+
+.card-gradient {
+  background: linear-gradient(180deg, #fbdaa2 0%, #ffc738 100%);
+}
+
+
