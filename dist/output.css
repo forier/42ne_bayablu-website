@@ -845,6 +845,10 @@ section,
   margin-right: 2rem;
 }
 
+.mt-1{
+  margin-top: 0.25rem;
+}
+
 .mt-10{
   margin-top: 2.5rem;
 }
@@ -875,10 +879,6 @@ section,
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.mt-1{
-  margin-top: 0.25rem;
 }
 
 .line-clamp-3{
@@ -956,12 +956,16 @@ section,
   height: 100%;
 }
 
-.h-\[10px\]{
-  height: 10px;
+.h-\[347px\]{
+  height: 347px;
 }
 
 .max-h-\[250px\]{
   max-height: 250px;
+}
+
+.max-h-14{
+  max-height: 3.5rem;
 }
 
 .min-h-screen{
@@ -1000,6 +1004,10 @@ section,
   width: 320px;
 }
 
+.w-\[50px\]{
+  width: 50px;
+}
+
 .w-\[70px\]{
   width: 70px;
 }
@@ -1011,10 +1019,6 @@ section,
 
 .w-full{
   width: 100%;
-}
-
-.w-\[50px\]{
-  width: 50px;
 }
 
 .max-w-7xl{
@@ -1046,6 +1050,12 @@ section,
 .scale-110{
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.scale-125{
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1121,16 +1131,16 @@ section,
   gap: 1rem;
 }
 
+.gap-5{
+  gap: 1.25rem;
+}
+
 .gap-6{
   gap: 1.5rem;
 }
 
 .gap-7{
   gap: 1.75rem;
-}
-
-.gap-5{
-  gap: 1.25rem;
 }
 
 .space-x-3 > :not([hidden]) ~ :not([hidden]){
@@ -1230,6 +1240,21 @@ section,
 .border-red-700{
   --tw-border-opacity: 1;
   border-color: rgb(185 28 28 / var(--tw-border-opacity));
+}
+
+.border-red-600{
+  --tw-border-opacity: 1;
+  border-color: rgb(220 38 38 / var(--tw-border-opacity));
+}
+
+.border-blue-600{
+  --tw-border-opacity: 1;
+  border-color: rgb(37 99 235 / var(--tw-border-opacity));
+}
+
+.border-blue-900{
+  --tw-border-opacity: 1;
+  border-color: rgb(30 58 138 / var(--tw-border-opacity));
 }
 
 .bg-\[\#D68D41\]{
@@ -1825,16 +1850,16 @@ section,
     place-items: end;
   }
 
+  .md\:gap-10{
+    gap: 2.5rem;
+  }
+
   .md\:gap-14{
     gap: 3.5rem;
   }
 
   .md\:gap-4{
     gap: 1rem;
-  }
-
-  .md\:gap-10{
-    gap: 2.5rem;
   }
 
   .md\:text-\[22px\]{
