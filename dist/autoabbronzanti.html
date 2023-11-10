@@ -8,7 +8,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
       rel="stylesheet"
     />
-    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles-26ac7f91f4.css" />
     <title>Bayablu Store</title>
   </head>
 
@@ -17,92 +17,97 @@
     openSidebar: false,
     }"
   >
-    <!-- cover -->
-    <img
-      src="https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/c897c217-b6d4-4c40-8b6d-92121e4d698e._CR0%2C0%2C1500%2C300_SX1280_.png"
-      alt="Cover"
-      class="-mt-6 mb-6 hidden lg:block w-full"
-    />
-
     <!-- header -->
-    <header class="select-none">
-      <ul
-        class="hidden lg:flex items-center justify-center gap-11 text-sm font-medium"
-      >
-        <li class="nav-item">
-          <a href="index.html">Home</a>
-        </li>
-        <li class="nav-item active">
-          <a href="autoabbronzanti.html"> Autoabbronzanti viso e corpo </a>
-        </li>
-        <li class="nav-item">
-          <a href="protezione.html"> Protezione Solare </a>
-        </li>
-        <li class="nav-item">
-          <a href="olio.html"> OLIO SUPER ABBRONZANTE </a>
-        </li>
-        <li class="nav-item">
-          <a href="chisamo.html">Chi Samo</a>
-        </li>
-      </ul>
-      <div class="flex items-center justify-between lg:hidden">
-        <img src="/assets/logo.png" alt="" class="w-[70px]" />
+    <div>
+  <!-- cover -->
+  <img
+    src="https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/c897c217-b6d4-4c40-8b6d-92121e4d698e._CR0%2C0%2C1500%2C300_SX1280_.png"
+    alt="Cover"
+    class="-mt-6 mb-6 hidden lg:block w-full"
+  />
 
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-10 w-10 cursor-pointer lg:hidden"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          stroke-width="2"
-          @click="openSidebar = true"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M4 6h16M4 12h16M4 18h16"
-          />
-        </svg>
-      </div>
-    </header>
-
-    <!-- Header Offset -->
-    <div
-      class="bg-white fixed left-0 top-0 z-[100] w-full min-h-screen h-full padding py-6 overflow-auto xl:hidden"
-      x-show="openSidebar === true"
+  <!-- header -->
+  <header class="select-none">
+    <ul
+      class="hidden lg:flex items-center justify-center gap-11 text-sm font-medium"
     >
-      <div class="flex items-center justify-between px-[3%]">
-        <a href="/" class="mr-8 shrink-0">
-          <img src="/assets/logo.png" alt="" class="w-[70px]" />
-        </a>
+      <li class="nav-item active">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="autoabbronzanti.html"> Autoabbronzanti viso e corpo </a>
+      </li>
+      <li class="nav-item">
+        <a href="protezione.html"> Protezione Solare </a>
+      </li>
+      <li class="nav-item">
+        <a href="olio.html"> OLIO SUPER ABBRONZANTE </a>
+      </li>
+      <li class="nav-item">
+        <a href="chisiamo.html">Chi Siamo</a>
+      </li>
+    </ul>
+    <div class="flex items-center justify-between lg:hidden">
+      <img src="/assets/logo.png" alt="" class="w-[70px]" />
 
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-10 w-10 text-primary-100 cursor-pointer block"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          stroke-width="2"
-          @click="openSidebar = false"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M6 18L18 6M6 6l12 12"
-          />
-        </svg>
-      </div>
-
-      <nav class="flex items-center gap-10 flex-col mt-10">
-        <a href="index.html" class="nav-item w-fit">Home</a>
-        <a href="autoabbronzanti.html" class="nav-item active w-fit"
-          >Autoabbronzanti viso e corpo</a
-        >
-        <a href="protezione.html" class="nav-item w-fit">Protezione Solare</a>
-        <a href="olio.html" class="nav-item w-fit">OLIO SUPER ABBRONZANTE</a>
-        <a href="chisamo.html" class="nav-item w-fit">Chi Samo</a>
-      </nav>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-10 w-10 cursor-pointer lg:hidden"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+        @click="openSidebar = true"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M4 6h16M4 12h16M4 18h16"
+        />
+      </svg>
     </div>
+  </header>
+
+  <!-- Header Offset -->
+  <div
+    class="bg-white fixed left-0 top-0 z-[100] w-full min-h-screen h-full padding py-6 overflow-auto xl:hidden"
+    x-show="openSidebar === true"
+  >
+    <div class="flex items-center justify-between px-[3%]">
+      <a href="/" class="mr-8 shrink-0">
+        <img src="/assets/logo.png" alt="" class="w-[70px]" />
+      </a>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-10 w-10 text-primary-100 cursor-pointer block"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+        @click="openSidebar = false"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18L18 6M6 6l12 12"
+        />
+      </svg>
+    </div>
+
+    <!-- Menu Offeset -->
+    <nav class="flex items-center gap-10 flex-col mt-10">
+      <a href="index.html" class="nav-item active w-fit">Home</a>
+      <a href="autoabbronzanti.html" class="nav-item w-fit"
+        >Autoabbronzanti viso e corpo</a
+      >
+      <a href="protezione.html" class="nav-item w-fit">Protezione Solare</a>
+      <a href="olio.html" class="nav-item w-fit">OLIO SUPER ABBRONZANTE</a>
+      <a href="chisiamo.html" class="nav-item w-fit">Chi Siamo</a>
+    </nav>
+  </div>
+</div>
+
 
     <div class="bg-[#fcfcfc] py-20 text-center text-xl lg:text-3xl mt-6">
       <section class="lg:max-w-4xl">
@@ -312,114 +317,59 @@
 
           <ul class="space-y-1 text-left text-gray-500 mb-5">
             <li class="flex items-center space-x-3">
-              <svg
-                class="flex-shrink-0 w-3.5 h-3.5 text-green-500"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 16 12"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5.917 5.724 10.5 15 1.5"
-                />
-              </svg>
-              <span>Individual configuration</span>
-            </li>
-            <li class="flex items-center space-x-3">
-              <svg
-                class="flex-shrink-0 w-3.5 h-3.5 text-green-500"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 16 12"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5.917 5.724 10.5 15 1.5"
-                />
-              </svg>
-              <span>No setup, or hidden fees</span>
-            </li>
-            <li class="flex items-center space-x-3">
-              <svg
-                class="flex-shrink-0 w-3.5 h-3.5 text-green-500"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 16 12"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5.917 5.724 10.5 15 1.5"
-                />
-              </svg>
               <span
-                >Team size:
-                <span class="font-semibold text-gray-900"
-                  >1 developer</span
-                ></span
+                >✅ MOUSSE AUTOABBRONZANTE: Bayablu è una crema autoabbronzante
+                viso e corpo adatta a tutti i tipi di pelle. Adatta come
+                autoabbronzante gambe, viso, braccia e corpo e perfetta sia per
+                uomini che per donne.</span
               >
             </li>
             <li class="flex items-center space-x-3">
-              <svg
-                class="flex-shrink-0 w-3.5 h-3.5 text-green-500"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 16 12"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5.917 5.724 10.5 15 1.5"
-                />
-              </svg>
               <span
-                >Premium support:
-                <span class="font-semibold text-gray-900">6 months</span></span
+                >✅ AUTOABBRONZANTE VISO E CORPO CON RISULTATI IMMEDIATI: La
+                crema autoabbronzante viso e corpo si asciuga dopo poche ore
+                dall’applicazione. L’effetto dell’abbronzante Bayablu dura fino
+                a 3 giorni. Non lascia macchie sulla pelle e sui vestiti. Un
+                attivatore abbronzatura di cui non potrai più fare a meno,
+                perfetto in ogni circostanza.</span
               >
             </li>
             <li class="flex items-center space-x-3">
-              <svg
-                class="flex-shrink-0 w-3.5 h-3.5 text-green-500"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 16 12"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5.917 5.724 10.5 15 1.5"
-                />
-              </svg>
               <span
-                >Free updates:
-                <span class="font-semibold text-gray-900">6 months</span></span
+                >✅ UNICO ABBRONZANTE AL PROFUMO DI COCCO: lo spray
+                autoabbronzante viso e corpo idratante Bayablu donerà alla tua
+                pelle un profumo irresistibile di cocco, maggiore radiosità e
+                una colorazione dall'aspetto naturale. Arricchita con estratto
+                di cacao e caramello, il nostro attivatore abbronzatura lascia
+                la pelle morbida e idratata. In più, svolge un’efficace funzione
+                di crema antirughe.</span
+              >
+            </li>
+            <li class="flex items-center space-x-3">
+              <span
+                >✅ DONA UN’ABBRONZATURA UNIFORME E RADIOSA: la crema
+                autoabbronzante viso e corpo Bayablu svolge un’efficace azione
+                di acceleratore abbronzatura grazie al DHA 100% naturale e di
+                origine vegetale e altri principi attivi che favoriscono la
+                naturale produzione di melanina.</span
+              >
+            </li>
+            <li class="flex items-center space-x-3">
+              <span
+                >✅ 100% MADE IN ITALY: l’autoabbronzante viso e corpo Bayablu
+                dalla produzione fino al confezionamento è interamente Made in
+                Italy. È un abbronzante Vegan e Cruelty Free che renderà la tua
+                pelle naturalmente abbronzata, più luminosa e nutrita.</span
               >
             </li>
           </ul>
 
           <div class="flex items-center justify-between">
-            <span class="text-3xl font-bold text-gray-900">$599</span>
+            <span class="text-3xl font-bold text-gray-900">€22.90</span>
             <a
               href="#"
               class="text-white btn_gradient focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-5 py-2.5 text-center"
-              >Visualiiza</a
+              >Acquista ora</a
             >
           </div>
         </div>
@@ -436,7 +386,13 @@
             src="https://m.media-amazon.com/images/I/71Ny7mhJxjL._AC_CR0%2C0%2C0%2C0_SX301_SY283_.jpg"
             alt="product image"
           />
-          <span class="text-xl font-bold text-gray-900">$599</span>
+          <h5
+            class="text-lg tracking-tight text-gray-900 line-clamp-3 text-center mb-2"
+          >
+            Mousse Autoabbronzante Istantaneo<br />Viso e Corpo al profumo di
+            Cocco 100 ml
+          </h5>
+          <span class="text-xl font-bold text-gray-900">€22.90</span>
         </div>
       </a>
       <a href="">
@@ -444,11 +400,38 @@
           class="bg-gray-50 hover:bg-gray-100 grid place-items-center transition-all py-5"
         >
           <img
-            class="p-8 rounded-t-lg group-hover:scale-105 transition-all"
-            src="https://m.media-amazon.com/images/I/71Ny7mhJxjL._AC_CR0%2C0%2C0%2C0_SX301_SY283_.jpg"
+            class="p-8 rounded-t-lg group-hover:scale-105 transition-all h-[347px]"
+            src="https://m.media-amazon.com/images/I/51nRiDpCu5L._AC_CR0%2C0%2C0%2C0_SX960_.jpg"
             alt="product image"
           />
-          <span class="text-xl font-bold text-gray-900">$599</span>
+          <h5
+            class="text-lg tracking-tight text-gray-900 line-clamp-3 text-center mb-2"
+          >
+            Mousse Autoabbronzante Istantaneo<br />Viso e Corpo al profumo di
+            Cocco 200 ml
+          </h5>
+          <span class="text-xl font-bold text-gray-900">€27.90</span>
+        </div>
+      </a>
+      <a href="">
+        <div
+          class="bg-gray-50 hover:bg-gray-100 grid place-items-center transition-all py-5"
+        >
+          <img
+            class="p-8 rounded-t-lg group-hover:scale-105 transition-all h-[347px]"
+            src="/assets/acapulco.png"
+            alt="product image"
+          />
+          <h5
+            class="text-lg tracking-tight text-gray-900 line-clamp-3 text-center mb-2"
+          >
+            Gocce Autoabbronzanti<br />di Acapulco 50 ml<br />
+            <span
+              class="text-white font-semibold text-sm p-1 bg-red-400 rounded-md"
+              >Esaurito - in produzione</span
+            >
+          </h5>
+          <span class="text-xl font-bold text-gray-900">€27.90</span>
         </div>
       </a>
     </section>
@@ -488,29 +471,29 @@
         class="flex items-center justify-center gap-5 md:gap-10 mt-6 flex-wrap"
       >
         <a
-          class="h-[50px] shrink-0"
+          class="h-[50px] w-[50px] flex-shrink-0"
           target="_blank"
           href="https://www.amazon.it/gp/redirect.html?location=https%3A%2F%2Ffacebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Fwww.amazon.it%252Fstores%252FBayablu%252FPaginaprincipale%252Fpage%252FA96FD6CB-BABC-48C4-B728-B4C22DD8EEAA%253Fchannel%253DStore%252520share%252520-%252520Facebook&amp;token=CADE26BAF1702190DA14D9D05D9B4912C07C4856"
           rel="noreferrer"
           ><img
             src="https://m.media-amazon.com/images/G/29/AmazonStores/facebook._CB485941752_.png"
             alt="Share on Facebook"
-            class="h-full w-full"
+            class="object-fill"
           />
         </a>
         <a
-          class="h-[50px] shrink-0"
+          class="h-[50px] w-[50px] flex-shrink-0 shrink-0"
           target="_blank"
           href="https://www.amazon.it/gp/redirect.html?location=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Ftext%3DBayablu%253A%2BPagina%2Bprincipale%26url%3Dhttps%253A%252F%252Fwww.amazon.it%252Fstores%252FBayablu%252FPaginaprincipale%252Fpage%252FA96FD6CB-BABC-48C4-B728-B4C22DD8EEAA%253Fchannel%253DStore%252520share%252520-%252520Twitter%26via%3DAmazon&amp;token=B9B69B963E6AA3346754E6C3EEA84B7BB3A8A1DB"
           rel="noreferrer"
           ><img
             src="https://m.media-amazon.com/images/G/29/AmazonStores/twitter._CB438369374_.png"
             alt="Share on Twitter"
-            class="h-full w-full"
+            class="object-fill"
           />
         </a>
         <a
-          class="h-[50px] shrink-0"
+          class="h-[50px] shrink-0 w-[50px] flex-shrink-0"
           target="_blank"
           href="https://www.amazon.it/gp/redirect.html?location=https%3A%2F%2Fwww.pinterest.com%2Fpin%2Fcreate%2Fbutton%3Furl%3Dhttps%253A%252F%252Fwww.amazon.it%252Fstores%252FBayablu%252FPaginaprincipale%252Fpage%252FA96FD6CB-BABC-48C4-B728-B4C22DD8EEAA%253Fchannel%253DStore%252520share%252520-%252520Pinterest%26description%3DBayablu%253A%2BPagina%2Bprincipale%26media%3Dhttps%253A%252F%252Fm.media-amazon.com%252Fimages%252FS%252Fal-eu-726f4d26-7fdb%252Fc897c217-b6d4-4c40-8b6d-92121e4d698e.png&amp;token=E7F1C5827801CA763135D82FFECE0423997D3762"
           rel="noreferrer"
@@ -518,48 +501,48 @@
           <img
             src="https://m.media-amazon.com/images/G/29/AmazonStores/pinterest._CB485948207_.png"
             alt="Share on Pinterest"
-            class="h-full w-full"
+            class="object-fill"
           />
         </a>
       </div>
     </section>
 
+    <!-- footer -->
     <footer class="bg-black text-white -mb-6 w-full text-center mt-6">
-      <div class="max-w-7xl mx-auto pt-14 pb-10 items-center divide-y">
-        <ul class="flex flex-col items-center font-normal gap-2 pb-10">
-          <p class="font-bold">© 2023 BAYABLU</p>
-          <p>Via Cantonale 69 6805 Mezzovico (CH)</p>
-          <p>Partita IVA CHE-321.366.709 IVA</p>
-          <p>
-            Tutti i Diritti sono riservati. E' vietata qualsiasi riproduzione,
-            anche parziale
-          </p>
+  <div class="max-w-7xl mx-auto pt-14 pb-10 items-center divide-y">
+    <ul class="flex flex-col items-center font-normal gap-2 pb-10">
+      <p class="font-bold">© 2023 BAYABLU</p>
+      <p>Via Cantonale 69 6805 Mezzovico (CH)</p>
+      <p>Partita IVA CHE-321.366.709 IVA</p>
+      <p>
+        11Tutti i Diritti sono riservati. E' vietata qualsiasi riproduzione,
+        anche parziale
+      </p>
 
-          <hr class="text-white bg-white" />
-        </ul>
+      <hr class="text-white bg-white" />
+    </ul>
 
-        <div class="py-6 text-center">
-          <p>
-            *This Website is non a part of Facebook or Facebook Inc.
-            Additionally, this site is NOT endorsed by Facebook in any way.
-          </p>
-          <p>FACEBOOK is a trademark of FACEBOOK Inc.</p>
-        </div>
+    <div class="py-6 text-center">
+      <p>
+        *This Website is non a part of Facebook or Facebook Inc. Additionally,
+        this site is NOT endorsed by Facebook in any way.
+      </p>
+      <p>FACEBOOK is a trademark of FACEBOOK Inc.</p>
+    </div>
 
-        <div class="pt-6">
-          <a
-            href="https://ilpoteredifarcela.com/termini-condizioni.html"
-            class="text-white hover:text-gray-400 mr-4"
-            >Termini e Condizioni</a
-          >
-          <a
-            href="https://ilpoteredifarcela.com/privacy-cookie.html"
-            class="text-white hover:text-gray-400"
-            >Politica sulla Privacy & Politica sui Cookie</a
-          >
-        </div>
-      </div>
-    </footer>
+    <div class="pt-6">
+      <a
+        href="./termini-condizioni.html"
+        class="text-white hover:text-gray-400 mr-4"
+        >Termini e Condizioni</a
+      >
+      <a href="./privacy-cookie.html" class="text-white hover:text-gray-400"
+        >Politica sulla Privacy & Politica sui Cookie</a
+      >
+    </div>
+  </div>
+</footer>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
 

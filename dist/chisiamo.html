@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles-26ac7f91f4.css" />
     <title>Bayablu Store</title>
   </head>
 
@@ -13,93 +13,97 @@
     openSidebar: false,
     }"
   >
-    <!-- cover -->
-    <img
-      src="https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/c897c217-b6d4-4c40-8b6d-92121e4d698e._CR0%2C0%2C1500%2C300_SX1280_.png"
-      alt="Cover"
-      class="-mt-6 mb-6 hidden lg:block w-full"
-    />
-
     <!-- header -->
-    <header class="select-none">
-      <ul
-        class="hidden lg:flex items-center justify-center gap-11 text-sm font-medium"
-      >
-        <li class="nav-item">
-          <a href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="autoabbronzanti.html"> Autoabbronzanti viso e corpo </a>
-        </li>
-        <li class="nav-item">
-          <a href="protezione.html"> Protezione Solare </a>
-        </li>
-        <li class="nav-item">
-          <a href="olio.html"> OLIO SUPER ABBRONZANTE </a>
-        </li>
-        <li class="nav-item active">
-          <a href="chisamo.html">Chi Samo</a>
-        </li>
-      </ul>
-      <div class="flex items-center justify-between lg:hidden">
-        <img src="/assets/logo.png" alt="" class="w-[70px]" />
+    <div>
+  <!-- cover -->
+  <img
+    src="https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/c897c217-b6d4-4c40-8b6d-92121e4d698e._CR0%2C0%2C1500%2C300_SX1280_.png"
+    alt="Cover"
+    class="-mt-6 mb-6 hidden lg:block w-full"
+  />
 
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-10 w-10 cursor-pointer lg:hidden"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          stroke-width="2"
-          @click="openSidebar = true"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M4 6h16M4 12h16M4 18h16"
-          />
-        </svg>
-      </div>
-    </header>
-
-    <!-- Header Offset -->
-    <div
-      class="bg-white fixed left-0 top-0 z-[100] w-full min-h-screen h-full padding py-6 overflow-auto xl:hidden"
-      x-show="openSidebar === true"
+  <!-- header -->
+  <header class="select-none">
+    <ul
+      class="hidden lg:flex items-center justify-center gap-11 text-sm font-medium"
     >
-      <div class="flex items-center justify-between px-[3%]">
-        <a href="/" class="mr-8 shrink-0">
-          <img src="/assets/logo.png" alt="" class="w-[70px]" />
-        </a>
+      <li class="nav-item active">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="autoabbronzanti.html"> Autoabbronzanti viso e corpo </a>
+      </li>
+      <li class="nav-item">
+        <a href="protezione.html"> Protezione Solare </a>
+      </li>
+      <li class="nav-item">
+        <a href="olio.html"> OLIO SUPER ABBRONZANTE </a>
+      </li>
+      <li class="nav-item">
+        <a href="chisiamo.html">Chi Siamo</a>
+      </li>
+    </ul>
+    <div class="flex items-center justify-between lg:hidden">
+      <img src="/assets/logo.png" alt="" class="w-[70px]" />
 
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-10 w-10 text-primary-100 cursor-pointer block"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          stroke-width="2"
-          @click="openSidebar = false"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M6 18L18 6M6 6l12 12"
-          />
-        </svg>
-      </div>
-
-      <!-- Menu Offeset -->
-      <nav class="flex items-center gap-10 flex-col mt-10">
-        <a href="index.html" class="nav-item w-fit">Home</a>
-        <a href="autoabbronzanti.html" class="nav-item w-fit"
-          >Autoabbronzanti viso e corpo</a
-        >
-        <a href="protezione.html" class="nav-item w-fit">Protezione Solare</a>
-        <a href="olio.html" class="nav-item w-fit">OLIO SUPER ABBRONZANTE</a>
-        <a href="chisamo.html" class="nav-item active w-fit">Chi Samo</a>
-      </nav>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-10 w-10 cursor-pointer lg:hidden"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+        @click="openSidebar = true"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M4 6h16M4 12h16M4 18h16"
+        />
+      </svg>
     </div>
+  </header>
+
+  <!-- Header Offset -->
+  <div
+    class="bg-white fixed left-0 top-0 z-[100] w-full min-h-screen h-full padding py-6 overflow-auto xl:hidden"
+    x-show="openSidebar === true"
+  >
+    <div class="flex items-center justify-between px-[3%]">
+      <a href="/" class="mr-8 shrink-0">
+        <img src="/assets/logo.png" alt="" class="w-[70px]" />
+      </a>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-10 w-10 text-primary-100 cursor-pointer block"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+        @click="openSidebar = false"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18L18 6M6 6l12 12"
+        />
+      </svg>
+    </div>
+
+    <!-- Menu Offeset -->
+    <nav class="flex items-center gap-10 flex-col mt-10">
+      <a href="index.html" class="nav-item active w-fit">Home</a>
+      <a href="autoabbronzanti.html" class="nav-item w-fit"
+        >Autoabbronzanti viso e corpo</a
+      >
+      <a href="protezione.html" class="nav-item w-fit">Protezione Solare</a>
+      <a href="olio.html" class="nav-item w-fit">OLIO SUPER ABBRONZANTE</a>
+      <a href="chisiamo.html" class="nav-item w-fit">Chi Siamo</a>
+    </nav>
+  </div>
+</div>
+
 
     <div class="bg-[#fcfcfc] py-20 text-center text-xl lg:text-3xl mt-6">
       <section class="lg:max-w-4xl">
@@ -113,7 +117,7 @@
       </section>
     </div>
 
-    <section>
+    <!-- <section>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
         <div
           class="w-full bg-white border border-gray-100 hover:bg-gray-100 group transition-all"
@@ -380,7 +384,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="text-center py-20">
       <span class="text-2xl font-bold">Condividi </span>
@@ -426,42 +430,42 @@
       </div>
     </section>
 
+    <!-- footer -->
     <footer class="bg-black text-white -mb-6 w-full text-center mt-6">
-      <div class="max-w-7xl mx-auto pt-14 pb-10 items-center divide-y">
-        <ul class="flex flex-col items-center font-normal gap-2 pb-10">
-          <p class="font-bold">© 2023 BAYABLU</p>
-          <p>Via Cantonale 69 6805 Mezzovico (CH)</p>
-          <p>Partita IVA CHE-321.366.709 IVA</p>
-          <p>
-            Tutti i Diritti sono riservati. E' vietata qualsiasi riproduzione,
-            anche parziale
-          </p>
+  <div class="max-w-7xl mx-auto pt-14 pb-10 items-center divide-y">
+    <ul class="flex flex-col items-center font-normal gap-2 pb-10">
+      <p class="font-bold">© 2023 BAYABLU</p>
+      <p>Via Cantonale 69 6805 Mezzovico (CH)</p>
+      <p>Partita IVA CHE-321.366.709 IVA</p>
+      <p>
+        11Tutti i Diritti sono riservati. E' vietata qualsiasi riproduzione,
+        anche parziale
+      </p>
 
-          <hr class="text-white bg-white" />
-        </ul>
+      <hr class="text-white bg-white" />
+    </ul>
 
-        <div class="py-6 text-center">
-          <p>
-            *This Website is non a part of Facebook or Facebook Inc.
-            Additionally, this site is NOT endorsed by Facebook in any way.
-          </p>
-          <p>FACEBOOK is a trademark of FACEBOOK Inc.</p>
-        </div>
+    <div class="py-6 text-center">
+      <p>
+        *This Website is non a part of Facebook or Facebook Inc. Additionally,
+        this site is NOT endorsed by Facebook in any way.
+      </p>
+      <p>FACEBOOK is a trademark of FACEBOOK Inc.</p>
+    </div>
 
-        <div class="pt-6">
-          <a
-            href="https://ilpoteredifarcela.com/termini-condizioni.html"
-            class="text-white hover:text-gray-400 mr-4"
-            >Termini e Condizioni</a
-          >
-          <a
-            href="https://ilpoteredifarcela.com/privacy-cookie.html"
-            class="text-white hover:text-gray-400"
-            >Politica sulla Privacy & Politica sui Cookie</a
-          >
-        </div>
-      </div>
-    </footer>
+    <div class="pt-6">
+      <a
+        href="./termini-condizioni.html"
+        class="text-white hover:text-gray-400 mr-4"
+        >Termini e Condizioni</a
+      >
+      <a href="./privacy-cookie.html" class="text-white hover:text-gray-400"
+        >Politica sulla Privacy & Politica sui Cookie</a
+      >
+    </div>
+  </div>
+</footer>
+
 
     <script
       src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
