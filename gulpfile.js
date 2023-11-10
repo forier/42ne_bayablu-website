@@ -10,6 +10,7 @@ import fs from "fs";
 import connect from "gulp-connect";
 import fileInclude from "gulp-file-include";
 import { deleteSync as delSync } from "del";
+import debug from 'gulp-debug';
 
 const paths = {
   src: {
@@ -67,6 +68,7 @@ gulp.task("clean", (done) => {
 gulp.task("copy-fonts", () => {
   return gulp
     .src(paths.src.fonts)
+    .pipe(debug({title: 'copy-fonts'}))
     .pipe(gulp.dest(path.join(paths.dist.assets, "fonts")))
     .pipe(connect.reload()); // Aggiunto per il livereload
 });
@@ -74,6 +76,7 @@ gulp.task("copy-fonts", () => {
 gulp.task("copy-images", () => {
   return gulp
     .src(paths.src.images)
+    .pipe(debug({title: 'copy-images'}))
     .pipe(gulp.dest(path.join(paths.dist.assets, "images")))
     .pipe(connect.reload()); // Aggiunto per il livereload
 });
@@ -95,7 +98,7 @@ gulp.task(
   "watch",
   gulp.parallel("css", "copy-fonts", "copy-images", "connect", () => {
     gulp.watch(paths.src.css, gulp.series("css", "reload"));
-    gulp.watch(paths.src.html, gulp.series("css", "html", "reload"));
+    gulp.watch(paths.src.html, gulp.series("html", "reload"));
     gulp.watch(paths.src.fonts, gulp.series("copy-fonts", "reload"));
     gulp.watch(paths.src.images, gulp.series("copy-images", "reload"));
   })
