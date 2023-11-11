@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles-d5e348c64c.css" />
+    <link rel="stylesheet" href="css/styles-7c16f59c63.css" />
     <title>Bayablu Store</title>
   </head>
 
@@ -24,25 +24,17 @@
 
   <!-- header -->
   <header class="select-none">
-    <ul
+    <nav
       class="hidden lg:flex items-center justify-center gap-11 text-sm font-medium"
     >
-      <li class="nav-item active">
-        <a href="index.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="autoabbronzanti.html"> Autoabbronzanti viso e corpo </a>
-      </li>
-      <li class="nav-item">
-        <a href="protezione.html"> Protezione Solare </a>
-      </li>
-      <li class="nav-item">
-        <a href="olio.html"> OLIO SUPER ABBRONZANTE </a>
-      </li>
-      <li class="nav-item">
-        <a href="chisiamo.html">Chi Siamo</a>
-      </li>
-    </ul>
+      <a class="nav-item" href="index.html">Home</a>
+      <a class="nav-item" href="autoabbronzanti.html">
+        Autoabbronzanti viso e corpo
+      </a>
+      <a class="nav-item" href="protezione.html"> Protezione Solare </a>
+      <a class="nav-item" href="olio.html"> OLIO SUPER ABBRONZANTE </a>
+      <a class="nav-item" href="chisiamo.html">Chi Siamo</a>
+    </nav>
     <div class="flex items-center justify-between lg:hidden">
       <img src="/assets/images/logo.png" alt="" class="w-[70px]" />
 
@@ -93,7 +85,7 @@
 
     <!-- Menu Offeset -->
     <nav class="flex items-center gap-10 flex-col mt-10">
-      <a href="index.html" class="nav-item active w-fit">Home</a>
+      <a href="index.html" class="nav-item w-fit">Home</a>
       <a href="autoabbronzanti.html" class="nav-item w-fit"
         >Autoabbronzanti viso e corpo</a
       >
@@ -103,6 +95,21 @@
     </nav>
   </div>
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var currentPath = window.location.pathname;
+    var navItems = document.querySelectorAll(".nav-item");
+
+    navItems.forEach(function (item) {
+      var itemHref = item.getAttribute("href");
+
+      if (currentPath.includes(itemHref)) {
+        item.classList.add("active");
+      }
+    });
+  });
+</script>
 
 
     <div class="bg-[#fcfcfc] py-20 text-center text-xl lg:text-3xl mt-6">
@@ -385,6 +392,16 @@
         </div>
       </div>
     </section> -->
+
+
+
+    <!-- Contact Section -->
+    <div class="text-center py-10">
+      <h2 class="text-2xl lg:text-4xl font-bold mb-4">Restiamo in Contatto!</h2>
+      <p>Per domande, suggerimenti o un saluto, non esitare a scriverci a:</p>
+      <a href="mailto:contatti@bayablu.com" class="text-lg lg:text-xl font-semibold text-blue-600">info@ilpoteredifarcela.com</a>
+      <p class="mt-3">Non vediamo l'ora di sentirti!</p>
+    </div>
 
     <section class="text-center py-20">
       <span class="text-2xl font-bold">Condividi </span>

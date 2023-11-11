@@ -8,7 +8,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles-d5e348c64c.css" />
+    <link rel="stylesheet" href="css/styles-7c16f59c63.css" />
     <title>Bayablu Store</title>
   </head>
 
@@ -28,25 +28,17 @@
 
   <!-- header -->
   <header class="select-none">
-    <ul
+    <nav
       class="hidden lg:flex items-center justify-center gap-11 text-sm font-medium"
     >
-      <li class="nav-item active">
-        <a href="index.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="autoabbronzanti.html"> Autoabbronzanti viso e corpo </a>
-      </li>
-      <li class="nav-item">
-        <a href="protezione.html"> Protezione Solare </a>
-      </li>
-      <li class="nav-item">
-        <a href="olio.html"> OLIO SUPER ABBRONZANTE </a>
-      </li>
-      <li class="nav-item">
-        <a href="chisiamo.html">Chi Siamo</a>
-      </li>
-    </ul>
+      <a class="nav-item" href="index.html">Home</a>
+      <a class="nav-item" href="autoabbronzanti.html">
+        Autoabbronzanti viso e corpo
+      </a>
+      <a class="nav-item" href="protezione.html"> Protezione Solare </a>
+      <a class="nav-item" href="olio.html"> OLIO SUPER ABBRONZANTE </a>
+      <a class="nav-item" href="chisiamo.html">Chi Siamo</a>
+    </nav>
     <div class="flex items-center justify-between lg:hidden">
       <img src="/assets/images/logo.png" alt="" class="w-[70px]" />
 
@@ -97,7 +89,7 @@
 
     <!-- Menu Offeset -->
     <nav class="flex items-center gap-10 flex-col mt-10">
-      <a href="index.html" class="nav-item active w-fit">Home</a>
+      <a href="index.html" class="nav-item w-fit">Home</a>
       <a href="autoabbronzanti.html" class="nav-item w-fit"
         >Autoabbronzanti viso e corpo</a
       >
@@ -107,6 +99,21 @@
     </nav>
   </div>
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var currentPath = window.location.pathname;
+    var navItems = document.querySelectorAll(".nav-item");
+
+    navItems.forEach(function (item) {
+      var itemHref = item.getAttribute("href");
+
+      if (currentPath.includes(itemHref)) {
+        item.classList.add("active");
+      }
+    });
+  });
+</script>
 
 
     <div class="bg-[#fcfcfc] py-20 text-center text-xl lg:text-3xl mt-6">
@@ -419,7 +426,7 @@
         >
           <img
             class="p-8 rounded-t-lg group-hover:scale-105 transition-all h-[347px]"
-            src="/assets/acapulco.png"
+            src="/assets/images/acapulco.png"
             alt="product image"
           />
           <h5
@@ -463,49 +470,50 @@
       </a>
     </section>
 
+    <!-- share section -->
     <section class="text-center py-20">
-      <span class="text-2xl font-bold">Condividi </span>
-      <p>Condividi questa pagina con i tuoi amici.</p>
-
-      <div
-        class="flex items-center justify-center gap-5 md:gap-10 mt-6 flex-wrap"
+    <span class="text-2xl font-bold">Condividi </span>
+    <p>Condividi questa pagina con i tuoi amici.</p>
+  
+    <div class="flex items-center justify-center gap-5 md:gap-10 mt-6 flex-wrap">
+      <a
+        class="h-[50px] w-[50px] flex-shrink-0"
+        target="_blank"
+        href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbayablu.com"
+        rel="noreferrer"
       >
-        <a
-          class="h-[50px] w-[50px] flex-shrink-0"
-          target="_blank"
-          href="https://www.amazon.it/gp/redirect.html?location=https%3A%2F%2Ffacebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Fwww.amazon.it%252Fstores%252FBayablu%252FPaginaprincipale%252Fpage%252FA96FD6CB-BABC-48C4-B728-B4C22DD8EEAA%253Fchannel%253DStore%252520share%252520-%252520Facebook&amp;token=CADE26BAF1702190DA14D9D05D9B4912C07C4856"
-          rel="noreferrer"
-          ><img
-            src="https://m.media-amazon.com/images/G/29/AmazonStores/facebook._CB485941752_.png"
-            alt="Share on Facebook"
-            class="object-fill"
-          />
-        </a>
-        <a
-          class="h-[50px] w-[50px] flex-shrink-0 shrink-0"
-          target="_blank"
-          href="https://www.amazon.it/gp/redirect.html?location=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Ftext%3DBayablu%253A%2BPagina%2Bprincipale%26url%3Dhttps%253A%252F%252Fwww.amazon.it%252Fstores%252FBayablu%252FPaginaprincipale%252Fpage%252FA96FD6CB-BABC-48C4-B728-B4C22DD8EEAA%253Fchannel%253DStore%252520share%252520-%252520Twitter%26via%3DAmazon&amp;token=B9B69B963E6AA3346754E6C3EEA84B7BB3A8A1DB"
-          rel="noreferrer"
-          ><img
-            src="https://m.media-amazon.com/images/G/29/AmazonStores/twitter._CB438369374_.png"
-            alt="Share on Twitter"
-            class="object-fill"
-          />
-        </a>
-        <a
-          class="h-[50px] shrink-0 w-[50px] flex-shrink-0"
-          target="_blank"
-          href="https://www.amazon.it/gp/redirect.html?location=https%3A%2F%2Fwww.pinterest.com%2Fpin%2Fcreate%2Fbutton%3Furl%3Dhttps%253A%252F%252Fwww.amazon.it%252Fstores%252FBayablu%252FPaginaprincipale%252Fpage%252FA96FD6CB-BABC-48C4-B728-B4C22DD8EEAA%253Fchannel%253DStore%252520share%252520-%252520Pinterest%26description%3DBayablu%253A%2BPagina%2Bprincipale%26media%3Dhttps%253A%252F%252Fm.media-amazon.com%252Fimages%252FS%252Fal-eu-726f4d26-7fdb%252Fc897c217-b6d4-4c40-8b6d-92121e4d698e.png&amp;token=E7F1C5827801CA763135D82FFECE0423997D3762"
-          rel="noreferrer"
-        >
-          <img
-            src="https://m.media-amazon.com/images/G/29/AmazonStores/pinterest._CB485948207_.png"
-            alt="Share on Pinterest"
-            class="object-fill"
-          />
-        </a>
-      </div>
-    </section>
+        <img
+          src="https://m.media-amazon.com/images/G/29/AmazonStores/facebook._CB485941752_.png"
+          alt="Share on Facebook"
+          class="object-fill"
+        />
+      </a>
+      <a
+        class="h-[50px] w-[50px] flex-shrink-0 shrink-0"
+        target="_blank"
+        href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fbayablu.com&text=Scopri%20Bayablu"
+        rel="noreferrer"
+      >
+        <img
+          src="assets/images/twitter.png"
+          alt="Share on Twitter"
+          class="object-fill"
+        />
+      </a>
+      <a
+        class="h-[50px] shrink-0 w-[50px]"
+        target="_blank"
+        href="https://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fbayablu.com"
+        rel="noreferrer"
+      >
+        <img
+          src="https://m.media-amazon.com/images/G/29/AmazonStores/pinterest._CB485948207_.png"
+          alt="Share on Pinterest"
+          class="object-fill"
+        />
+      </a>
+    </div>
+  </section>
 
     <!-- footer -->
     <footer class="bg-black text-white -mb-6 w-full text-center mt-6">

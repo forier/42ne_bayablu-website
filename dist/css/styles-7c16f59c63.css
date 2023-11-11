@@ -771,6 +771,9 @@ section,
 .mt-20{
   margin-top: 5rem;
 }
+.mt-3{
+  margin-top: 0.75rem;
+}
 .mt-4{
   margin-top: 1rem;
 }
@@ -810,9 +813,6 @@ section,
 .h-3{
   height: 0.75rem;
 }
-.h-3\.5{
-  height: 0.875rem;
-}
 .h-4{
   height: 1rem;
 }
@@ -851,9 +851,6 @@ section,
 }
 .w-3{
   width: 0.75rem;
-}
-.w-3\.5{
-  width: 0.875rem;
 }
 .w-4{
   width: 1rem;
@@ -1333,6 +1330,10 @@ section,
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
+.text-blue-600{
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
+}
 .text-blue-800{
   --tw-text-opacity: 1;
   color: rgb(30 64 175 / var(--tw-text-opacity));
@@ -1352,10 +1353,6 @@ section,
 .text-gray-900{
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
-}
-.text-green-500{
-  --tw-text-opacity: 1;
-  color: rgb(34 197 94 / var(--tw-text-opacity));
 }
 .text-red-300{
   --tw-text-opacity: 1;
@@ -1627,6 +1624,16 @@ section,
   .lg\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .lg\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .lg\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 

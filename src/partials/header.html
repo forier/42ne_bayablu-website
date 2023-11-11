@@ -8,25 +8,17 @@
 
   <!-- header -->
   <header class="select-none">
-    <ul
+    <nav
       class="hidden lg:flex items-center justify-center gap-11 text-sm font-medium"
     >
-      <li class="nav-item active">
-        <a href="index.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="autoabbronzanti.html"> Autoabbronzanti viso e corpo </a>
-      </li>
-      <li class="nav-item">
-        <a href="protezione.html"> Protezione Solare </a>
-      </li>
-      <li class="nav-item">
-        <a href="olio.html"> OLIO SUPER ABBRONZANTE </a>
-      </li>
-      <li class="nav-item">
-        <a href="chisiamo.html">Chi Siamo</a>
-      </li>
-    </ul>
+      <a class="nav-item" href="index.html">Home</a>
+      <a class="nav-item" href="autoabbronzanti.html">
+        Autoabbronzanti viso e corpo
+      </a>
+      <a class="nav-item" href="protezione.html"> Protezione Solare </a>
+      <a class="nav-item" href="olio.html"> OLIO SUPER ABBRONZANTE </a>
+      <a class="nav-item" href="chisiamo.html">Chi Siamo</a>
+    </nav>
     <div class="flex items-center justify-between lg:hidden">
       <img src="/assets/images/logo.png" alt="" class="w-[70px]" />
 
@@ -77,7 +69,7 @@
 
     <!-- Menu Offeset -->
     <nav class="flex items-center gap-10 flex-col mt-10">
-      <a href="index.html" class="nav-item active w-fit">Home</a>
+      <a href="index.html" class="nav-item w-fit">Home</a>
       <a href="autoabbronzanti.html" class="nav-item w-fit"
         >Autoabbronzanti viso e corpo</a
       >
@@ -87,3 +79,18 @@
     </nav>
   </div>
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var currentPath = window.location.pathname;
+    var navItems = document.querySelectorAll(".nav-item");
+
+    navItems.forEach(function (item) {
+      var itemHref = item.getAttribute("href");
+
+      if (currentPath.includes(itemHref)) {
+        item.classList.add("active");
+      }
+    });
+  });
+</script>
